@@ -4,8 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --base-href 'https://delphinerichard.github.io/scoreboard/'",
-    "deploy": "npx angular-cli-ghpages --dir=dist/scoreboard",
+    "build": "ng build --base-href 'https://delphinerichard.github.io/'",
+    "deploy": "npx angular-cli-ghpages --dir=dist/delphinerichard.github.io/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
