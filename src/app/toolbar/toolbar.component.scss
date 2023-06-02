@@ -1,13 +1,13 @@
 @import '../../light-theme.scss';
 
 .toolbar {
-    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 60px;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: $primary;
     color: $font-color-primary;
     font-weight: 600;
@@ -32,4 +32,13 @@
     &:hover {
       color: $accent;
     }
+  }
+
+  .job-title{
+    position: relative;
+  }
+
+  .icons{
+    position: absolute;
+    right: 20px;
   }
