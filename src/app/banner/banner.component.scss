@@ -1,0 +1,33 @@
+@import '../../light-theme.scss';
+
+.banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $primary;
+    color: $font-color-primary;
+    padding: 2px 20px 2px 20px;
+}
+
+img{
+    margin-top: 20px;
+    max-width: 70%;
+    border-radius: 50%;
+    border: 2px solid $accent;
+    background-color: $accent;
+    height: auto;
+}
+
+.location{
+    display:inline-flex;
+}
+
+.location-icon{
+    margin-right: 5px;
+    color: $accent;
+}
