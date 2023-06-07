@@ -1,0 +1,22 @@
+@import '../../light-theme.scss';
+
+.chip{
+    color: $font-color-secondary;
+    border-radius: 7px;
+    margin: 5px;
+    padding: 5px;
+    width: max-content;
+    justify-content: center;
+    display: flex;
+}
+
+
+.skill-name{
+    display: table; 
+    vertical-align: middle;
+    margin-top: 2px;
+}
+
+.icon{
+    margin-right: 5px;
+}
