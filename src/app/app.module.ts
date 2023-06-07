@@ -5,21 +5,30 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatIconModule} from '@angular/material/icon';
 import { BannerComponent } from './banner/banner.component';
+import { SkillsComponent } from './skills/skills.component';
+import { SkillComponent } from './skill/skill.component';
+
+import {MatIconModule} from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    BannerComponent
+    BannerComponent,
+    SkillsComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
