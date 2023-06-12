@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Skill } from '../@interfaces/skill.interface';
 
 
 @Component({
@@ -33,8 +34,3 @@ public skillsList: Skill[] = [
 ];
 }
 
-export interface Skill{
-  name: string,
-  weight: number,
-  icon: string
-}

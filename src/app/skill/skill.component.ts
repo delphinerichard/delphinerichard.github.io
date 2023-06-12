@@ -1,18 +1,17 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-skill',
   templateUrl: './skill.component.html',
   styleUrls: ['./skill.component.scss']
 })
-export class SkillComponent {
-  @Input() name: string = "";
-  @Input() weight: number = 0;
-  @Input() icon: string = "";
-  weightColor: string ="";
+export class SkillComponent implements OnInit {
+  @Input() name: string;
+  @Input() weight: number;
+  @Input() icon: string ;
+  weightColor: string;
 
   ngOnInit() {
-
     const first = "#fb8500";
     const second = "#fd9e02";
     const third = "#ffb703";
