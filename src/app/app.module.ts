@@ -8,10 +8,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BannerComponent } from './banner/banner.component';
 import { SkillsComponent } from './skills/skills.component';
 import { SkillComponent } from './skill/skill.component';
+import { FormationsComponent } from './formations/formations.component';
+import { FormationComponent } from './formation/formation.component';
 
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -20,7 +23,9 @@ import {MatDividerModule} from '@angular/material/divider';
     ToolbarComponent,
     BannerComponent,
     SkillsComponent,
-    SkillComponent
+    SkillComponent,
+    FormationsComponent,
+    FormationComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +33,8 @@ import {MatDividerModule} from '@angular/material/divider';
     BrowserAnimationsModule,
     MatIconModule,
     MatCardModule,
-    MatDividerModule
+    MatDividerModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
