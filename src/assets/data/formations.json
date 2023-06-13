@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Premiere formation",
+        "date": "2020 - 2022",
+        "location": "Ville-Un-Peu-Longue",
+        "description": "Voici la première formation",
+        "hiddenDescription": "",
+        "skills": [
+            {
+                "name": "Skill 1",
+                "weight": 80,
+                "icon": "linkedin"
+            },
+            {
+                "name": "Skill 2",
+                "weight": 30,
+                "icon": "github"
+            }
+        ],
+        "collapsed": true
+    },
+    {
+        "title": "Deuxième formation",
+        "date": "2018 - 2020",
+        "location": "Ville",
+        "description": "Debut de la formation",
+        "hiddenDescription": "Logoden biniou degemer mat an penn ar bed gwiskamant, gwir pluenn neuiñ galv derc’hel start nec’h lakaat garm, us diaoul degouezhout da traezh pe beaj. E taol vantell us tour divalav rak da brudet, kazeg melen fourchetez dimeziñ talvoudus tasenn aketus kreñv geot, gwerzhañ hed pegañ nerzh ebrel ha tremen.",
+        "skills": [
+            {
+                "name": "Skill",
+                "weight": 50,
+                "icon": "email"
+            }
+        ],
+        "collapsed": true
+    }
+]
