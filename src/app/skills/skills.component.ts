@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Skill } from '../@interfaces/skill.interface';
+import { AppService } from '../app.service';
 
 
 @Component({
@@ -8,29 +9,10 @@ import { Skill } from '../@interfaces/skill.interface';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent {
+  public skillsList: Skill[]; 
 
-// TO DO : update the skill list according to real skills
-public skillsList: Skill[] = [
-  {
-    name: "Skill",
-    weight: 80,
-    icon: 'linkedin'
-  },
-  {
-    name: "Another Skill",
-    weight: 40,
-    icon: 'github'
-  },
-  {
-    name: "Long Skill with spaces",
-    weight: 20,
-    icon: 'linkedin'
-  },
-  {
-    name: "Half skill",
-    weight: 15,
-    icon: 'email'
+  constructor(private appService : AppService){
+    this.appService.getSkillsData().then((res: Skill[]) => { this.skillsList = res });
   }
-];
 }
 

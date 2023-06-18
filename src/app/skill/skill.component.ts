@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Skill } from '../@interfaces/skill.interface';
 
 @Component({
   selector: 'app-skill',
@@ -6,9 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./skill.component.scss']
 })
 export class SkillComponent implements OnInit {
-  @Input() name: string;
-  @Input() weight: number;
-  @Input() icon: string ;
+  @Input() skill: Skill;
   weightColor: string;
 
   ngOnInit() {
@@ -16,9 +15,9 @@ export class SkillComponent implements OnInit {
     const second = "#fd9e02";
     const third = "#ffb703";
 
-    if(this.weight > 70){
+    if(this.skill.weight > 70){
       this.weightColor = first;
-     } else if (this.weight < 70 && this.weight > 39){
+     } else if (this.skill.weight < 70 && this.skill.weight > 39){
       this.weightColor = second;
     } else {
       this.weightColor = third;

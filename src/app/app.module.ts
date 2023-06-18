@@ -9,13 +9,13 @@ import { BannerComponent } from './banner/banner.component';
 import { SkillsComponent } from './skills/skills.component';
 import { SkillComponent } from './skill/skill.component';
 import { FormationsComponent } from './formations/formations.component';
-import { FormationComponent } from './formation/formation.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
-
+import { AppService } from './app.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import {MatButtonModule} from '@angular/material/button';
     SkillsComponent,
     SkillComponent,
     FormationsComponent,
-    FormationComponent
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
@@ -34,9 +34,10 @@ import {MatButtonModule} from '@angular/material/button';
     MatIconModule,
     MatCardModule,
     MatDividerModule,
+    MatButtonModule,
     MatButtonModule
   ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

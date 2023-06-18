@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Skill",
+        "weight": 80,
+        "icon": "linkedin"
+    },
+    {
+        "name": "Another Skill",
+        "weight": 40,
+        "icon": "github"
+    },
+    {
+        "name": "Long Skill with spaces",
+        "weight": 20,
+        "icon": "linkedin"
+    },
+    {
+        "name": "Half skill",
+        "weight": 15,
+        "icon": "email"
+    }
+]
