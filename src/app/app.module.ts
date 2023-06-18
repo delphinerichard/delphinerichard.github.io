@@ -34,6 +34,7 @@ import { AppService } from './app.service';
     MatIconModule,
     MatCardModule,
     MatDividerModule,
+    MatButtonModule,
     MatButtonModule
   ],
   providers: [AppService],
