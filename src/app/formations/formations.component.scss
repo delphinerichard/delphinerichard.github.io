@@ -1,7 +1,17 @@
 @import '../../styles.scss';
 
-:host{
-    position: absolute;
-    left: 20px;
-    right: 20px;
+
+mat-card {
+    padding: 20px;
+    background-color: $primary;
 }
+
+mat-card-title {
+    color: $font-color-primary
+}
+
+// :host{
+//     position: absolute;
+//     left: 20px;
+//     right: 20px;
+// }

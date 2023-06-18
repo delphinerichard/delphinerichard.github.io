@@ -1,76 +1,77 @@
 @import '../styles.scss';
 
 :host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 8px 0;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
 
-  p {
-    margin: 0;
-  }
+p {
+  margin: 0;
+}
 
-  .spacer {
-    flex: 1;
-  }
+.spacer {
+  flex: 1;
+}
 
-  .content {
-    display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 960px;
-    align-items: center;
-  }
+.content {
+  display: flex;
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  max-width: 960px;
+  align-items: center;
+}
 
-  .main-content {
-    display: flex;
-    position:absolute;
-    width: 80%;
-    top: 30px; 
-    right: 0;
-    bottom: 0;
-    padding: 80px 16px;
-    max-width: 960px;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  a,
-  a:visited,
-  a:hover {
-    color: $accent;
-    text-decoration: none;
-  }
+.main-content {
+  display: flex;
+  position: absolute;
+  width: 80%;
+  top: 80px;
+  right: 0;
+  bottom: 0;
+  // padding: 80px 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
 
-  a:hover {
-    color: $accent;
-  }
+a,
+a:visited,
+a:hover {
+  color: $accent;
+  text-decoration: none;
+}
 
-  footer {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 20px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-  }
+a:hover {
+  color: $accent;
+}
 
-  footer a {
-    display: flex;
-    align-items: center;
-  }
+footer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 20px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,28 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>{{experience.title}}</mat-card-title>
+        <mat-card-title class="company">{{experience.company}}</mat-card-title>
+        <mat-card-subtitle>
+            <mat-icon>location_on</mat-icon> {{experience.date}} 
+            <div class="spacer"></div>
+            <mat-icon>date_range</mat-icon> {{experience.location}}
+        </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        {{experience.description}}
+    </mat-card-content>
+    <mat-card-content *ngIf="!experience.collapsed">
+        {{experience.hiddenDescription}}
+    </mat-card-content>
+    <mat-card-content class="skill-list" >
+        <app-skill *ngFor="let skill of experience.skills" [skill]="skill"></app-skill>
+    </mat-card-content>
+    <mat-card-actions *ngIf="experience.hiddenDescription !== ''">
+        <button mat-icon-button *ngIf="experience.collapsed" (click)="experience.collapsed=false">
+            <mat-icon>keyboard_arrow_down</mat-icon>
+        </button>
+        <button mat-icon-button *ngIf="!experience.collapsed" (click)="experience.collapsed=true">
+            <mat-icon>keyboard_arrow_up</mat-icon>
+        </button>
+    </mat-card-actions>
+</mat-card>
