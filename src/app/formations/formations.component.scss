@@ -1,17 +1,20 @@
-@import '../../styles.scss';
-
+@import "../../styles.scss";
 
 mat-card {
-    padding: 20px;
-    background-color: $primary;
+  padding: 20px;
+  background-color: $background-color;
 }
 
 mat-card-title {
-    color: $font-color-primary
+  color: $font-color-primary;
 }
 
-// :host{
-//     position: absolute;
-//     left: 20px;
-//     right: 20px;
-// }
+mat-grid-list {
+  width: 100%;
+}
+
+:host {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+}

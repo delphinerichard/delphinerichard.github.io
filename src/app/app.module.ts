@@ -10,11 +10,11 @@ import { SkillsComponent } from './skills/skills.component';
 import { SkillComponent } from './skill/skill.component';
 import { FormationsComponent } from './formations/formations.component';
 import { ExperienceComponent } from './experience/experience.component';
-
-import {MatIconModule} from '@angular/material/icon';
-import {MatCardModule} from '@angular/material/card';
-import {MatDividerModule} from '@angular/material/divider';
-import {MatButtonModule} from '@angular/material/button';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatButtonModule } from '@angular/material/button';
 import { AppService } from './app.service';
 
 @NgModule({
@@ -25,7 +25,7 @@ import { AppService } from './app.service';
     SkillsComponent,
     SkillComponent,
     FormationsComponent,
-    ExperienceComponent
+    ExperienceComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,9 +35,10 @@ import { AppService } from './app.service';
     MatCardModule,
     MatDividerModule,
     MatButtonModule,
-    MatButtonModule
+    MatButtonModule,
+    MatGridListModule,
   ],
   providers: [AppService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,32 +1,33 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
 
 mat-card {
-    padding: 2px;
-    margin: 10px;
-    background-color: $light-grey;
+  padding: 2px;
+  margin: 10px;
+  background-color: $background-color;
+  border-radius: 1rem;
 }
 
 mat-card-subtitle {
-    display: flex;
-    align-content: space-between;
-    width: 100%;
+  display: flex;
+  align-content: space-between;
+  width: 100%;
 }
 
 mat-icon {
-    margin-right: 2px;
+  margin-right: 2px;
 }
 
 .company {
-    font-size: medium;
-    font-weight: bolder;
+  font-size: medium;
+  font-weight: bolder;
 }
 
 .skill-list {
-    display: flex;
-    margin-top: 5px;
+  display: flex;
+  margin-top: 5px;
 }
 
 .spacer {
-    flex: 1;
-    width: 200px;
+  flex: 1;
+  width: 200px;
 }
