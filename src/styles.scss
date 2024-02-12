@@ -1,6 +1,13 @@
-@import './light-theme.scss';
+@import "./light-theme.scss";
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
-background-color: $light-grey; }
+html,
+body {
+  // overflow-y: hidden;
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: $background-color;
+}
