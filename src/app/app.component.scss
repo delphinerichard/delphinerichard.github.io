@@ -27,18 +27,11 @@ p {
   flex: 1;
 }
 
-.content {
-  display: flex;
-  margin: 82px auto 32px;
-  padding: 0 16px;
-  max-width: 960px;
-  align-items: center;
-}
-
 .main-content {
   display: flex;
   position: absolute;
   width: 80%;
+  padding-top: 32px;
   // top: 80px;
   top: 0;
   right: 0;

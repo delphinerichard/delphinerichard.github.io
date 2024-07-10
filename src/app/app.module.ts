@@ -16,6 +16,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { AppService } from './app.service';
+import { FormationComponent } from './formation/formation.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { AppService } from './app.service';
     SkillComponent,
     FormationsComponent,
     ExperienceComponent,
+    FormationComponent,
   ],
   imports: [
     BrowserModule,

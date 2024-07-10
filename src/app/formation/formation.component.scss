@@ -1,6 +1,28 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
 
-mat-card{
-    padding: 2px;
-    margin: 10px;
+mat-card {
+  background-color: white;
+  border-radius: 1rem;
+  width: 90%;
+  min-height: 100%;
+}
+
+mat-card-subtitle {
+  display: flex;
+  align-content: space-between;
+  width: 100%;
+}
+
+mat-icon {
+  margin-right: 2px;
+}
+
+.company {
+  font-size: medium;
+  font-weight: bolder;
+}
+
+.spacer {
+  flex: 1;
+  width: 200px;
 }

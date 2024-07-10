@@ -1,16 +1,7 @@
 @import "../../styles.scss";
 
-mat-card {
-  padding: 20px;
+.formation-container {
   background-color: $background-color;
-}
-
-mat-card-title {
-  color: $font-color-primary;
-}
-
-mat-grid-list {
-  width: 100%;
 }
 
 :host {
