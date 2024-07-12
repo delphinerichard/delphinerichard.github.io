@@ -1,26 +1,5 @@
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>{{ experience.title }}</mat-card-title>
-    <mat-card-title class="company">{{ experience.company }}</mat-card-title>
-    <mat-card-subtitle>
-      <mat-icon>location_on</mat-icon> {{ experience.date }}
-      <div class="spacer"></div>
-      <mat-icon>date_range</mat-icon> {{ experience.location }}
-    </mat-card-subtitle>
-  </mat-card-header>
-  <mat-card-content>
-    {{ experience.description }}
-  </mat-card-content>
-  <mat-card-content *ngIf="!experience.collapsed">
-    {{ experience.hiddenDescription }}
-  </mat-card-content>
-  <mat-card-content class="skill-list">
-    <app-skill
-      *ngFor="let skill of experience.skills"
-      [skill]="skill"
-    ></app-skill>
-  </mat-card-content>
-  <mat-card-actions *ngIf="experience.hiddenDescription !== ''">
+<div>
+  <div *ngIf="experience.hiddenDescription !== ''" class="show-more-button">
     <button
       mat-icon-button
       *ngIf="experience.collapsed"
@@ -35,5 +14,29 @@
     >
       <mat-icon>keyboard_arrow_up</mat-icon>
     </button>
-  </mat-card-actions>
-</mat-card>
+  </div>
+  <h4 class="experience-title">{{ experience.title }}</h4>
+  <div class="experience-company">{{ experience.company }}</div>
+  <div class="experience-infos">
+    <div class="experience-date">
+      <mat-icon class="experience-icon">date_range</mat-icon>
+      {{ experience.date }}
+    </div>
+    <div class="experience-location">
+      <mat-icon class="experience-icon">location_on</mat-icon>
+      {{ experience.location }}
+    </div>
+  </div>
+
+  <div [innerHTML]="experience.description"></div>
+  <div
+    *ngIf="!experience.collapsed"
+    [innerHTML]="experience.hiddenDescription"
+  ></div>
+  <div class="skill-list">
+    <app-skill
+      *ngFor="let skill of experience.skills"
+      [skill]="skill"
+    ></app-skill>
+  </div>
+</div>

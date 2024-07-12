@@ -1,22 +1,30 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
 
-.chip{
-    color: $font-color-secondary;
-    border-radius: 7px;
-    margin: 5px;
-    padding: 5px;
-    width: max-content;
-    justify-content: center;
-    display: flex;
+.chip {
+  color: $font-color-primary;
+  // border-radius: 7px;
+  // margin: 5px;
+  // padding: 5px;
+  // width: max-content;
+  // justify-content: center;
+  // display: flex;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.9em;
+  transition: all 0.3s ease;
 }
 
-
-.skill-name{
-    display: table; 
-    vertical-align: middle;
-    margin-top: 2px;
+.skill-name {
+  display: table;
+  vertical-align: middle;
+  margin-top: 2px;
 }
 
-.icon{
-    margin-right: 5px;
+.icon {
+  margin-right: 5px;
+}
+
+.chip:hover {
+  background-color: #d26649;
+  transform: translateY(-2px);
 }
