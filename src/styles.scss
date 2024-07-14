@@ -1,15 +1,19 @@
 @import "./light-theme.scss";
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 html,
 body {
-  // overflow-y: hidden;
   height: 100%;
-}
-body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: $content-font;
   background-color: $background-color;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $title-font;
+  font-weight: bold;
 }
 
 .section-title {
@@ -19,6 +23,7 @@ body {
   display: flex;
   align-items: center;
   padding-left: 10px;
+  font-family: $title-font;
 }
 
 .box {
