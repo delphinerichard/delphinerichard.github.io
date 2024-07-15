@@ -1,8 +1,8 @@
 @import "../../styles.scss";
 
 .avatar {
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
@@ -23,6 +23,10 @@
   display: block;
 }
 
+.job-title {
+  position: relative;
+}
+
 .location {
   display: inline-flex;
   margin-bottom: 1rem;
@@ -32,31 +36,3 @@
   margin-right: 5px;
   color: $accent;
 }
-
-a {
-  color: $font-color-primary;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  transition: all 0.4s ease;
-
-  &:hover {
-    transform: translateX(5px);
-    transition: transform 0.2s ease;
-    color: $accent;
-  }
-}
-
-.job-title {
-  position: relative;
-}
-
-mat-icon {
-  margin-right: 5px;
-}
-
-// .contacts {
-//   text-align: left;
-//   display: block;
-// }

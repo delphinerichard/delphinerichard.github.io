@@ -1,0 +1,12 @@
+[
+  {
+    "name": { "fr": "Français", "en": "French" },
+    "icon": "french",
+    "level": "100%"
+  },
+  {
+    "name": { "fr": "Anglais", "en": "English" },
+    "icon": "uk",
+    "level": "75%"
+  }
+]

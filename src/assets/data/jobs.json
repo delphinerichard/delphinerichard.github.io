@@ -55,31 +55,31 @@
     "skills": [
       {
         "name": "Typescript",
-        "weight": 20,
+        "weight": 80,
         "icon": ""
       },
       {
         "name": "Javascript",
-        "weight": 20,
+        "weight": 80,
         "icon": ""
       },
       {
         "name": "Angular",
-        "weight": 20,
+        "weight": 50,
         "icon": ""
       },
       {
         "name": "Node.js",
+        "weight": 50,
+        "icon": ""
+      },
+      {
+        "name": "CI/CD",
         "weight": 20,
         "icon": ""
       },
       {
         "name": "Python",
-        "weight": 20,
-        "icon": ""
-      },
-      {
-        "name": "CI/CD",
         "weight": 20,
         "icon": ""
       }
@@ -96,7 +96,7 @@
     "skills": [
       {
         "name": "Javascript",
-        "weight": 70,
+        "weight": 80,
         "icon": ""
       },
       {
@@ -115,6 +115,52 @@
         "icon": ""
       }
     ],
+    "collapsed": true
+  },
+  {
+    "title": "Monitrice de voile",
+    "company": "Ecole de voile de Bretignolles-sur-Mer",
+    "date": "Etés 2019 et 2020",
+    "location": "Brétignolles-sur-Mer (85)",
+    "description": "Encadrement de groupes de catamarans et de dériveurs (adultes et enfants à partir de 6 ans)",
+    "hiddenDescription": "",
+    "skills": [
+      {
+        "name": "Prise de décision",
+        "weight": 80,
+        "icon": ""
+      },
+      {
+        "name": "Travail en équipe",
+        "weight": 80,
+        "icon": ""
+      },
+      {
+        "name": "Pédagogie",
+        "weight": 20,
+        "icon": ""
+      }
+    ],
+    "collapsed": true
+  },
+  {
+    "title": "Monitrice de voile",
+    "company": "Ecole de voile de Cherbourg",
+    "date": "Etés 2017 et 2018",
+    "location": "Cherbourg (50)",
+    "description": "Encadrement de groupes de catamarans et de dériveurs (adultes et enfants à partir de 4 ans)",
+    "hiddenDescription": "",
+    "skills": [],
+    "collapsed": true
+  },
+  {
+    "title": "Monitrice de voile en formation",
+    "company": "Ecole de voile de Cherbourg",
+    "date": "Etés 2015 et 2016",
+    "location": "Cherbourg (50)",
+    "description": "Préparation du diplôme de monitrice de voile",
+    "hiddenDescription": "",
+    "skills": [],
     "collapsed": true
   }
 ]

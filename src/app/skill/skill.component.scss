@@ -2,12 +2,6 @@
 
 .chip {
   color: $font-color-primary;
-  // border-radius: 7px;
-  // margin: 5px;
-  // padding: 5px;
-  // width: max-content;
-  // justify-content: center;
-  // display: flex;
   padding: 5px 10px;
   border-radius: 15px;
   font-size: 0.9em;
@@ -25,6 +19,5 @@
 }
 
 .chip:hover {
-  background-color: #d26649;
   transform: translateY(-2px);
 }

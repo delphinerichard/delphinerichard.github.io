@@ -15,6 +15,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { AppService } from './app.service';
 import { SmallColumnComponent } from './small-column/smallColumn.component';
 import { JobsComponent } from './jobs/jobs.component';
+import { ContactComponent } from './contact/contact.component';
+import { LanguageComponent } from './language/language.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { JobsComponent } from './jobs/jobs.component';
     ExperienceComponent,
     SmallColumnComponent,
     JobsComponent,
+    ContactComponent,
+    LanguageComponent,
   ],
   imports: [
     BrowserModule,
