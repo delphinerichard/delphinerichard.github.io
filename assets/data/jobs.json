@@ -10,37 +10,37 @@
       {
         "name": "React.js",
         "weight": 70,
-        "icon": ""
+        "icon": "react"
       },
       {
         "name": "Node.js",
         "weight": 50,
-        "icon": ""
+        "icon": "node"
       },
       {
         "name": "NestJS",
         "weight": 50,
-        "icon": ""
+        "icon": "nest"
       },
       {
         "name": "Vue.js",
         "weight": 20,
-        "icon": ""
+        "icon": "vue"
       },
       {
         "name": "Sanity",
         "weight": 20,
-        "icon": ""
+        "icon": "sanity"
       },
       {
         "name": "Jest",
         "weight": 20,
-        "icon": ""
+        "icon": "jest"
       },
       {
         "name": "Playwright",
         "weight": 20,
-        "icon": ""
+        "icon": "playwright"
       }
     ],
     "collapsed": true
@@ -56,32 +56,32 @@
       {
         "name": "Typescript",
         "weight": 80,
-        "icon": ""
+        "icon": "typescript"
       },
       {
         "name": "Javascript",
         "weight": 80,
-        "icon": ""
+        "icon": "javascript"
       },
       {
         "name": "Angular",
         "weight": 50,
-        "icon": ""
+        "icon": "angular"
       },
       {
         "name": "Node.js",
         "weight": 50,
-        "icon": ""
+        "icon": "node"
       },
       {
         "name": "CI/CD",
         "weight": 20,
-        "icon": ""
+        "icon": "gitlab"
       },
       {
         "name": "Python",
         "weight": 20,
-        "icon": ""
+        "icon": "python"
       }
     ],
     "collapsed": true
@@ -97,22 +97,22 @@
       {
         "name": "Javascript",
         "weight": 80,
-        "icon": ""
+        "icon": "javascript"
       },
       {
         "name": "Angular",
         "weight": 50,
-        "icon": ""
+        "icon": "angular"
       },
       {
         "name": "NestJS",
         "weight": 20,
-        "icon": ""
+        "icon": "nest"
       },
       {
         "name": "Mocha / Chai",
         "weight": 20,
-        "icon": ""
+        "icon": "mocha"
       }
     ],
     "collapsed": true
