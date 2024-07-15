@@ -1,0 +1,63 @@
+@import "../../styles.scss";
+
+.show-more-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: $accent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.5em;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.show-more-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.experience-title {
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: 0.3rem;
+  margin-top: 0.3rem;
+  color: $accent;
+}
+
+.experience-company {
+  margin-bottom: 0.3rem;
+}
+
+.experience-infos {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  color: $font-color-secondary;
+}
+
+.experience-icon {
+  color: $accent;
+  margin-right: 0.2rem;
+  transform: scale(0.8);
+}
+.experience-date {
+  display: inline-flex;
+}
+
+.experience-location {
+  display: inline-flex;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.spacer {
+  flex: 1;
+  width: 200px;
+}

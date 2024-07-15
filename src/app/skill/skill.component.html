@@ -1,0 +1,13 @@
+<div
+  *ngIf="skill.weight > 0 && weightColor !== ''"
+  class="chip"
+  [ngStyle]="{ 'background-color': weightColor }"
+>
+  <mat-icon
+    *ngIf="skill.icon.length > 0"
+    class="icon"
+    [svgIcon]="skill.icon"
+    aria-hidden="true"
+  ></mat-icon>
+  <div class="skill-name">{{ skill.name }}</div>
+</div>

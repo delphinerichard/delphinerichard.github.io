@@ -3,23 +3,44 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatIconModule} from '@angular/material/icon';
-
+import { SkillComponent } from './skill/skill.component';
+import { FormationsComponent } from './formations/formations.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatButtonModule } from '@angular/material/button';
+import { AppService } from './app.service';
+import { SmallColumnComponent } from './small-column/smallColumn.component';
+import { JobsComponent } from './jobs/jobs.component';
+import { ContactComponent } from './contact/contact.component';
+import { LanguageComponent } from './language/language.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent
+    SkillComponent,
+    FormationsComponent,
+    ExperienceComponent,
+    SmallColumnComponent,
+    JobsComponent,
+    ContactComponent,
+    LanguageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule,
+    MatDividerModule,
+    MatButtonModule,
+    MatButtonModule,
+    MatGridListModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [AppService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

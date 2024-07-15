@@ -1,5 +1,45 @@
-@import './light-theme.scss';
+@import "./light-theme.scss";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
-background-color: $light-grey; }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: $content-font;
+  font-size: 14px;
+  background-color: $background-color;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $title-font;
+  font-weight: bold;
+}
+
+.section-title {
+  font-size: 1.8em;
+  color: $accent;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-family: $title-font;
+}
+
+.box {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
