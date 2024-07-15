@@ -6,6 +6,8 @@
   border-radius: 15px;
   font-size: 0.9em;
   transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
 }
 
 .skill-name {
@@ -16,6 +18,9 @@
 
 .icon {
   margin-right: 5px;
+  width: 1.25rem;
+  height: 1.25rem;
+  color: $font-color-primary;
 }
 
 .chip:hover {

@@ -1,38 +1,40 @@
-<div>
-  <div *ngIf="experience.hiddenDescription !== ''" class="show-more-button">
-    <button
-      mat-icon-button
-      *ngIf="experience.collapsed"
-      (click)="experience.collapsed = false"
-    >
-      <mat-icon>keyboard_arrow_down</mat-icon>
-    </button>
-    <button
-      mat-icon-button
-      *ngIf="!experience.collapsed"
-      (click)="experience.collapsed = true"
-    >
-      <mat-icon>keyboard_arrow_up</mat-icon>
-    </button>
-  </div>
-  <h4 class="experience-title">{{ experience.title }}</h4>
-  <div class="experience-company">{{ experience.company }}</div>
-  <div class="experience-infos">
-    <div class="experience-date">
-      <mat-icon class="experience-icon">date_range</mat-icon>
-      {{ experience.date }}
+<div class="experience-container">
+  <div>
+    <div *ngIf="experience.hiddenDescription !== ''" class="show-more-button">
+      <button
+        mat-icon-button
+        *ngIf="experience.collapsed"
+        (click)="experience.collapsed = false"
+      >
+        <mat-icon>keyboard_arrow_down</mat-icon>
+      </button>
+      <button
+        mat-icon-button
+        *ngIf="!experience.collapsed"
+        (click)="experience.collapsed = true"
+      >
+        <mat-icon>keyboard_arrow_up</mat-icon>
+      </button>
     </div>
-    <div class="experience-location">
-      <mat-icon class="experience-icon">location_on</mat-icon>
-      {{ experience.location }}
+    <h4 class="experience-title">{{ experience.title }}</h4>
+    <div class="experience-company">{{ experience.company }}</div>
+    <div class="experience-infos">
+      <div class="experience-date">
+        <mat-icon class="experience-icon">date_range</mat-icon>
+        {{ experience.date }}
+      </div>
+      <div class="experience-location">
+        <mat-icon class="experience-icon">location_on</mat-icon>
+        {{ experience.location }}
+      </div>
     </div>
-  </div>
 
-  <div [innerHTML]="experience.description"></div>
-  <div
-    *ngIf="!experience.collapsed"
-    [innerHTML]="experience.hiddenDescription"
-  ></div>
+    <div [innerHTML]="experience.description"></div>
+    <div
+      *ngIf="!experience.collapsed"
+      [innerHTML]="experience.hiddenDescription"
+    ></div>
+  </div>
   <div class="skill-list">
     <app-skill
       *ngFor="let skill of experience.skills"
