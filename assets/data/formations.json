@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Ingénieure de spécialisation",
+    "company": "EURECOM",
+    "date": "2020 - 2022",
+    "location": "Sophia (06)",
+    "description": "Double diplôme <br/> Ingénieure spécialisée en Sécurité des Systèmes d'Information et des Communications<br/> Formation en anglais",
+    "hiddenDescription": "",
+    "skills": [],
+    "collapsed": true
+  },
+  {
+    "title": "Ingénieure informatique",
+    "company": "ENSSAT Lannion",
+    "date": "2018 - 2020",
+    "location": "Lannion (22)",
+    "description": "Ecole nationale supérieure des sciences appliquées et de technologie",
+    "hiddenDescription": "",
+    "skills": [],
+    "collapsed": true
+  },
+  {
+    "title": "CPGE",
+    "company": "Lycée Clemenceau",
+    "date": "2016 - 2018",
+    "location": "Nantes (44)",
+    "description": "Classe préparatoire aux grandes écoles <br/> MPSI - MP",
+    "skills": [],
+    "hiddenDescription": "",
+    "collapsed": true
+  }
+]
