@@ -17,6 +17,7 @@ import { SmallColumnComponent } from './small-column/smallColumn.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { ContactComponent } from './contact/contact.component';
 import { LanguageComponent } from './language/language.component';
+import { MobileHeaderComponent } from './mobile-header/mobile-header.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { LanguageComponent } from './language/language.component';
     JobsComponent,
     ContactComponent,
     LanguageComponent,
+    MobileHeaderComponent,
   ],
   imports: [
     BrowserModule,

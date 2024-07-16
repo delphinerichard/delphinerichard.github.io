@@ -5,7 +5,6 @@ a {
   text-decoration: none;
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
   transition: all 0.4s ease;
 
   &:hover {
@@ -27,4 +26,12 @@ mat-icon {
   display: flex;
   gap: 20px;
   justify-content: center;
+}
+
+// Mobile design
+@media (min-width: 1200px) {
+  .contacts {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }

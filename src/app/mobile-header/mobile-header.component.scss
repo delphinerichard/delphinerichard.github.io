@@ -1,0 +1,49 @@
+@import "../../styles.scss";
+
+.mobile-header-container {
+  max-width: 90%;
+  margin: 20px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 5px solid $accent;
+}
+
+.header {
+  display: flex;
+  gap: 2rem;
+}
+
+.name {
+  color: $accent;
+  margin-top: 2rem;
+  font-weight: bold;
+  display: block;
+}
+
+.job-title {
+  position: relative;
+}
+
+.location {
+  display: inline-flex;
+}
+
+.location-icon {
+  margin-right: 5px;
+  color: $accent;
+}
+
+.other-infos {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+}

@@ -1,5 +1,19 @@
+@import "../../styles.scss";
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
+}
+
+.jobs-title {
+  color: $accent;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+h2 {
+  line-height: 1;
 }

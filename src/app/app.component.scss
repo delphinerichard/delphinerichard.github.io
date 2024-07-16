@@ -7,6 +7,7 @@ p {
 .spacer {
   flex: 1;
 }
+
 .small-column {
   position: fixed;
   width: 280px;
@@ -27,4 +28,23 @@ a:visited,
 a:hover {
   color: $accent;
   text-decoration: none;
+}
+
+// Mobile design
+@media (max-width: 1200px) {
+  .small-column {
+    display: none;
+  }
+  .main-content {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    width: 90%;
+  }
+}
+
+// Computer design
+@media (min-width: 1200px) {
+  .mobile-header {
+    display: none;
+  }
 }
