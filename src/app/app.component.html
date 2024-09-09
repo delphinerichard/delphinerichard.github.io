@@ -1,4 +1,4 @@
-<div class="content" role="main">
+<div class="content" role="main" id="all-content">
   <div class="small-column">
     <app-small-column></app-small-column>
   </div>
@@ -6,6 +6,14 @@
     <app-mobile-header></app-mobile-header>
   </div>
   <div class="main-content">
+    <button
+      mat-icon-button
+      matTooltip="Télécharger en pdf"
+      class="pdf-button"
+      (click)="convertToPDF()"
+    >
+      <mat-icon>download</mat-icon>
+    </button>
     <app-jobs></app-jobs>
     <app-formations></app-formations>
   </div>
