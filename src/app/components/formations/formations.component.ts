@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { AppService } from '../app.service';
-import { Experience } from '../@interfaces/experience.interface';
+import { AppService } from 'src/app/app.service';
+import { Experience } from 'src/app/@interfaces/experience.interface';
 
 @Component({
   selector: 'app-formations',
