@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Experience } from '../@interfaces/experience.interface';
-import { AppService } from '../app.service';
+import { Experience } from 'src/app/@interfaces/experience.interface';
+import { AppService } from 'src/app/app.service';
 
 @Component({
   selector: 'app-jobs',

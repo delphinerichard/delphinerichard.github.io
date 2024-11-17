@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Language } from '../@interfaces/language.interface';
-import { AppService } from '../app.service';
+import { Language } from 'src/app/@interfaces/language.interface';
+import { AppService } from 'src/app/app.service';
 
 @Component({
   selector: 'app-language',
