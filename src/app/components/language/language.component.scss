@@ -17,6 +17,7 @@
   align-items: center;
   display: flex;
   font-weight: bold;
+  min-width: 120px;
 }
 
 .language-level {
@@ -38,5 +39,9 @@
 @media (max-width: 1200px) {
   .languages {
     max-width: 90%;
+  }
+
+  .language-level {
+    background-color: white;
   }
 }
