@@ -1,0 +1,24 @@
+{
+  "name": "Delphine RICHARD",
+  "job-title": "Ingénieure Fullstack",
+  "location": "Rennes (35)",
+  "settings": {
+    "language": {
+      "label": "Langue",
+      "en": {
+        "name": "Anglais",
+        "icon": "uk"
+      },
+      "fr": {
+        "name": "Français",
+        "icon": "french"
+      }
+    }
+  },
+  "jobs": {
+    "title": "Expériences professionnelles"
+  },
+  "formations": {
+    "title": "Formations"
+  }
+}

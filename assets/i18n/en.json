@@ -1,0 +1,24 @@
+{
+  "name": "Delphine RICHARD",
+  "job-title": "Software Engineer",
+  "location": "Rennes, France",
+  "settings": {
+    "language": {
+      "label": "Language",
+      "en": {
+        "name": "English",
+        "icon": "uk"
+      },
+      "fr": {
+        "name": "French",
+        "icon": "french"
+      }
+    }
+  },
+  "jobs": {
+    "title": "Work Experience"
+  },
+  "formations": {
+    "title": "Education"
+  }
+}

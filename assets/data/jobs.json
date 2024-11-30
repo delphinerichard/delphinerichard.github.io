@@ -1,44 +1,74 @@
 [
   {
-    "title": "Ingénieure développement full-stack",
-    "company": "digital4better",
-    "date": "depuis Juin 2023",
-    "location": "Rennes (35)",
-    "description": "Développement et maintenance d'applications web pour différents clients",
-    "hiddenDescription": "<ul><li> Amélioration du site interne de l'entreprise</li><li> Implémentation d'une application permettant de créer un questionnaire sur des sujets liés au développement durable et de restituer les réponses sous la forme d'une matrice </li><li> Maintenance corrective et évolutive sur différents projets </li><li>Tests unitaires et E2E</li><li>Formation au Numérique Responsable (certification Institut du Numérique Responsable) </li></ul>",
+    "title": {
+      "fr": "Ingénieure développement full-stack",
+      "en": "Full-stack development engineer"
+    },
+    "company": { "fr": "digital4better", "en": "digital4better" },
+    "date": { "fr": "depuis Juin 2023", "en": "since June 2023" },
+    "location": { "fr": "Rennes (35)", "en": "Rennes (France)" },
+    "description": {
+      "fr": "Développement et maintenance d'applications web pour différents clients",
+      "en": "Development and maintenance of web applications for various clients"
+    },
+    "hiddenDescription": {
+      "fr": "<ul><li> Amélioration du site interne de l'entreprise</li><li> Implémentation d'une application permettant de créer un questionnaire sur des sujets liés au développement durable et de restituer les réponses sous la forme d'une matrice </li><li> Maintenance corrective et évolutive sur différents projets </li><li>Tests unitaires et E2E</li><li>Formation au Numérique Responsable (certification Institut du Numérique Responsable) </li></ul>",
+      "en": "<ul><li> Improvement of the company's internal website</li><li> Implementation of an application allowing to create a questionnaire on topics related to sustainable development and to return the answers in the form of a matrix </li><li> Corrective and evolutionary maintenance on various projects </li><li>Unit and E2E tests</li><li>Training in Responsible Digital (Institut du Numérique Responsable certification) </li></ul>"
+    },
     "skills": [
       {
-        "name": "React.js",
+        "name": {
+          "fr": "React.js",
+          "en": "React.js"
+        },
         "weight": 70,
         "icon": "react"
       },
       {
-        "name": "Node.js",
+        "name": {
+          "fr": "Node.js",
+          "en": "Node.js"
+        },
         "weight": 50,
         "icon": "node"
       },
       {
-        "name": "NestJS",
+        "name": {
+          "fr": "NestJS",
+          "en": "NestJS"
+        },
         "weight": 50,
         "icon": "nest"
       },
       {
-        "name": "Vue.js",
+        "name": {
+          "fr": "Vue.js",
+          "en": "Vue.js"
+        },
         "weight": 20,
         "icon": "vue"
       },
       {
-        "name": "Sanity",
+        "name": {
+          "fr": "Sanity",
+          "en": "Sanity"
+        },
         "weight": 20,
         "icon": "sanity"
       },
       {
-        "name": "Jest",
+        "name": {
+          "fr": "Jest",
+          "en": "Jest"
+        },
         "weight": 20,
         "icon": "jest"
       },
       {
-        "name": "Playwright",
+        "name": {
+          "fr": "Playwright",
+          "en": "Playwright"
+        },
         "weight": 20,
         "icon": "playwright"
       }
@@ -46,40 +76,70 @@
     "collapsed": true
   },
   {
-    "title": "Ingénieure développement full-stack",
-    "company": "ALTEN",
-    "date": "Janvier 2022 - Avril 2023",
-    "location": "Rennes (35)",
-    "description": "Développement de différents projets et mise en place de bonnes pratiques au sein d'une équipe de développement",
-    "hiddenDescription": "<ul><li> Mise en place d'outils CI/CD sur le GitLab de l'équipe </li><li> Mise en place de la documentation générale sur le fonctionnement de l'équipe </li><li> Élaboration de plusieurs fonctionnalités au sein du projet interne (gestion des utilisateurs et leurs rôles, application d'édition de texte avancée, etc.) </li><li> Tests et correction d'anomalies</li></ul>",
+    "title": {
+      "fr": "Ingénieure développement full-stack",
+      "en": "Full-stack development engineer"
+    },
+    "company": { "fr": "ALTEN", "en": "ALTEN" },
+    "date": {
+      "fr": "Janvier 2022 - Avril 2023",
+      "en": "January 2022 - April 2023"
+    },
+    "location": { "fr": "Rennes (35)", "en": "Rennes (France)" },
+    "description": {
+      "fr": "Développement de différents projets et mise en place de bonnes pratiques au sein d'une équipe de développement",
+      "en": "Development of various projects and implementation of best practices within a development team"
+    },
+    "hiddenDescription": {
+      "fr": "<ul><li> Mise en place d'outils CI/CD sur le GitLab de l'équipe </li><li> Mise en place de la documentation générale sur le fonctionnement de l'équipe </li><li> Élaboration de plusieurs fonctionnalités au sein du projet interne (gestion des utilisateurs et leurs rôles, application d'édition de texte avancée, etc.) </li><li> Tests et correction d'anomalies</li></ul>",
+      "en": "<ul><li> Implementation of CI/CD tools on the team's GitLab </li><li> Implementation of general documentation on the team's operation </li><li> Development of several features within the internal project (management of users and their roles, advanced text editing application, etc.) </li><li> Tests and bug fixes</li></ul>"
+    },
     "skills": [
       {
-        "name": "Typescript",
+        "name": {
+          "fr": "Typescript",
+          "en": "Typescript"
+        },
         "weight": 80,
         "icon": "typescript"
       },
       {
-        "name": "Javascript",
+        "name": {
+          "fr": "Javascript",
+          "en": "Javascript"
+        },
         "weight": 80,
         "icon": "javascript"
       },
       {
-        "name": "Angular",
+        "name": {
+          "fr": "Angular",
+          "en": "Angular"
+        },
         "weight": 50,
         "icon": "angular"
       },
       {
-        "name": "Node.js",
+        "name": {
+          "fr": "Node.js",
+          "en": "Node.js"
+        },
         "weight": 50,
         "icon": "node"
       },
       {
-        "name": "CI/CD",
+        "name": {
+          "fr": "CI/CD",
+          "en": "CI/CD"
+        },
         "weight": 20,
         "icon": "gitlab"
       },
       {
-        "name": "Python",
+        "name": {
+          "fr": "Python",
+          "en": "Python"
+        },
         "weight": 20,
         "icon": "python"
       }
@@ -87,30 +147,51 @@
     "collapsed": true
   },
   {
-    "title": "Ingénieure blockchain stagiaire",
-    "company": "ALTEN Labs",
-    "date": "Juillet - Décembre 2021",
-    "location": "Rennes (35)",
-    "description": "Utilisation de la blockchain pour des services sécurisés",
-    "hiddenDescription": "<ul><li>Conception et implémentation d'un backend (smart contract basé sur la blockchain Hyperledger Fabric)</li><li>Implémentation de tests unitaires</li><li>Implémentation d'une API</li><li>Implémentation d'une interface graphique front-end</li></ul>",
+    "title": {
+      "fr": "Ingénieure blockchain stagiaire",
+      "en": "Blockchain engineer intern"
+    },
+    "company": { "fr": "ALTEN Labs", "en": "ALTEN Labs" },
+    "date": { "fr": "Juillet - Décembre 2021", "en": "July - December 2021" },
+    "location": { "fr": "Rennes (35)", "en": "Rennes (France)" },
+    "description": {
+      "fr": "Utilisation de la blockchain pour des services sécurisés",
+      "en": "Use of blockchain for secure services"
+    },
+    "hiddenDescription": {
+      "fr": "<ul><li>Conception et implémentation d'un backend (smart contract basé sur la blockchain Hyperledger Fabric)</li><li>Implémentation de tests unitaires</li><li>Implémentation d'une API</li><li>Implémentation d'une interface graphique front-end</li></ul>",
+      "en": "<ul><li>Design and implementation of a backend (smart contract based on the Hyperledger Fabric blockchain)</li><li>Implementation of unit tests</li><li>Implementation of an API</li><li>Implementation of a front-end graphical interface</li></ul>"
+    },
     "skills": [
       {
-        "name": "Javascript",
+        "name": {
+          "fr": "Javascript",
+          "en": "Javascript"
+        },
         "weight": 80,
         "icon": "javascript"
       },
       {
-        "name": "Angular",
+        "name": {
+          "fr": "Angular",
+          "en": "Angular"
+        },
         "weight": 50,
         "icon": "angular"
       },
       {
-        "name": "NestJS",
+        "name": {
+          "fr": "NestJS",
+          "en": "NestJS"
+        },
         "weight": 20,
         "icon": "nest"
       },
       {
-        "name": "Mocha / Chai",
+        "name": {
+          "fr": "Mocha / Chai",
+          "en": "Mocha / Chai"
+        },
         "weight": 20,
         "icon": "mocha"
       }
@@ -118,25 +199,42 @@
     "collapsed": true
   },
   {
-    "title": "Monitrice de voile",
-    "company": "Ecole de voile de Bretignolles-sur-Mer",
-    "date": "Etés 2019 et 2020",
-    "location": "Brétignolles-sur-Mer (85)",
-    "description": "Encadrement de groupes de catamarans et de dériveurs (adultes et enfants à partir de 6 ans)",
-    "hiddenDescription": "",
+    "title": { "fr": "Monitrice de voile", "en": "Sailing instructor" },
+    "company": {
+      "fr": "Ecole de voile de Bretignolles-sur-Mer",
+      "en": "Sailing school of Bretignolles-sur-Mer"
+    },
+    "date": { "fr": "Etés 2019 et 2020", "en": "Summers 2019 and 2020" },
+    "location": {
+      "fr": "Brétignolles-sur-Mer (85)",
+      "en": "Brétignolles-sur-Mer (France)"
+    },
+    "description": {
+      "fr": "Encadrement de groupes de catamarans et de dériveurs (adultes et enfants à partir de 6 ans)",
+      "en": "Supervision of groups of catamarans and dinghies (adults and children from 6 years old)"
+    },
     "skills": [
       {
-        "name": "Prise de décision",
+        "name": {
+          "fr": "Prise de décision",
+          "en": "Decision making"
+        },
         "weight": 80,
         "icon": ""
       },
       {
-        "name": "Travail en équipe",
+        "name": {
+          "fr": "Travail en équipe",
+          "en": "Teamwork"
+        },
         "weight": 80,
         "icon": ""
       },
       {
-        "name": "Pédagogie",
+        "name": {
+          "fr": "Pédagogie",
+          "en": "Pedagogy"
+        },
         "weight": 20,
         "icon": ""
       }
@@ -144,22 +242,35 @@
     "collapsed": true
   },
   {
-    "title": "Monitrice de voile",
-    "company": "Ecole de voile de Cherbourg",
-    "date": "Etés 2017 et 2018",
-    "location": "Cherbourg (50)",
-    "description": "Encadrement de groupes de catamarans et de dériveurs (adultes et enfants à partir de 4 ans)",
-    "hiddenDescription": "",
+    "title": { "fr": "Monitrice de voile", "en": "Sailing instructor" },
+    "company": {
+      "fr": "Ecole de voile de Cherbourg",
+      "en": "Sailing school of Cherbourg"
+    },
+    "date": { "fr": "Etés 2017 et 2018", "en": "Summers 2017 and 2018" },
+    "location": { "fr": "Cherbourg (50)", "en": "Cherbourg (France)" },
+    "description": {
+      "fr": "Encadrement de groupes de catamarans et de dériveurs (adultes et enfants à partir de 4 ans)",
+      "en": "Supervision of groups of catamarans and dinghies (adults and children from 4 years old)"
+    },
     "skills": [],
     "collapsed": true
   },
   {
-    "title": "Monitrice de voile en formation",
-    "company": "Ecole de voile de Cherbourg",
-    "date": "Etés 2015 et 2016",
-    "location": "Cherbourg (50)",
-    "description": "Préparation du diplôme de monitrice de voile",
-    "hiddenDescription": "",
+    "title": {
+      "fr": "Monitrice de voile en formation",
+      "en": "Sailing instructor intern"
+    },
+    "company": {
+      "fr": "Ecole de voile de Cherbourg",
+      "en": "Sailing school of Cherbourg"
+    },
+    "date": { "fr": "Etés 2015 et 2016", "en": "Summers 2015 and 2016" },
+    "location": { "fr": "Cherbourg (50)", "en": "Cherbourg (France)" },
+    "description": {
+      "fr": "Préparation du diplôme de monitrice de voile",
+      "en": "Preparation for the sailing instructor diploma"
+    },
     "skills": [],
     "collapsed": true
   }
