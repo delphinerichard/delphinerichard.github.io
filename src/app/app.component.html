@@ -1,13 +1,13 @@
 <div class="content" role="main">
   <div class="small-column">
-    <app-small-column></app-small-column>
+    <app-small-column [lang]="lang"></app-small-column>
   </div>
   <div class="mobile-header">
-    <app-mobile-header></app-mobile-header>
+    <app-mobile-header [lang]="lang"></app-mobile-header>
   </div>
   <div class="main-content">
     <app-settings class="settings"></app-settings>
-    <app-jobs></app-jobs>
-    <app-formations></app-formations>
+    <app-jobs [lang]="lang"></app-jobs>
+    <app-formations [lang]="lang"></app-formations>
   </div>
 </div>

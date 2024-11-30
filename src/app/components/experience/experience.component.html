@@ -1,6 +1,6 @@
 <div class="experience-container">
   <div>
-    <div *ngIf="experience.hiddenDescription !== ''" class="show-more-button">
+    <div *ngIf="experience.hiddenDescription" class="show-more-button">
       <button
         mat-icon-button
         *ngIf="experience.collapsed"
@@ -16,29 +16,30 @@
         <mat-icon>keyboard_arrow_up</mat-icon>
       </button>
     </div>
-    <h4 class="experience-title">{{ experience.title }}</h4>
-    <div class="experience-company">{{ experience.company }}</div>
+    <h4 class="experience-title">{{ experience.title[lang] }}</h4>
+    <div class="experience-company">{{ experience.company[lang] }}</div>
     <div class="experience-infos">
       <div class="experience-date">
         <mat-icon class="experience-icon">date_range</mat-icon>
-        {{ experience.date }}
+        {{ experience.date[lang] }}
       </div>
       <div class="experience-location">
         <mat-icon class="experience-icon">location_on</mat-icon>
-        {{ experience.location }}
+        {{ experience.location[lang] }}
       </div>
     </div>
 
-    <div [innerHTML]="experience.description"></div>
+    <div [innerHTML]="experience.description[lang]"></div>
     <div
-      *ngIf="!experience.collapsed"
-      [innerHTML]="experience.hiddenDescription"
+      *ngIf="!experience.collapsed && experience.hiddenDescription"
+      [innerHTML]="experience.hiddenDescription[lang]"
     ></div>
   </div>
   <div class="skill-list">
     <app-skill
       *ngFor="let skill of experience.skills"
       [skill]="skill"
+      [lang]="lang"
     ></app-skill>
   </div>
 </div>

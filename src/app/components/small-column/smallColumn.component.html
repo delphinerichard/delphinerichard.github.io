@@ -4,9 +4,9 @@
   <h2 class="job-title">{{ "job-title" | translate }}</h2>
   <div class="location">
     <mat-icon class="location-icon" aria-hidden="true">location_on</mat-icon>
-    Rennes (35)
+    {{ "location" | translate }}
   </div>
 
   <app-contact></app-contact>
-  <app-language></app-language>
+  <app-language [lang]="lang"></app-language>
 </div>

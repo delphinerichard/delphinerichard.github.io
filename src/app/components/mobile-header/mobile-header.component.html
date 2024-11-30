@@ -10,10 +10,10 @@
   <div class="other-infos">
     <div class="location">
       <mat-icon class="location-icon" aria-hidden="true">location_on</mat-icon>
-      Rennes (35)
+      {{ "location" | translate }}
     </div>
 
     <app-contact></app-contact>
   </div>
-  <app-language></app-language>
+  <app-language [lang]="lang"></app-language>
 </div>

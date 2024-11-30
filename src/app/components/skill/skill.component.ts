@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Skill } from 'src/app/@interfaces/skill.interface';
+import { AvailableLang } from 'src/app/@interfaces/translations';
 
 @Component({
   selector: 'app-skill',
@@ -8,6 +9,7 @@ import { Skill } from 'src/app/@interfaces/skill.interface';
 })
 export class SkillComponent implements OnInit {
   @Input() skill: Skill;
+  @Input() lang: AvailableLang;
   weightColor: string;
 
   ngOnInit() {

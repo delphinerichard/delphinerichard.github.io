@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Language } from 'src/app/@interfaces/language.interface';
+import { AvailableLang } from 'src/app/@interfaces/translations';
 import { AppService } from 'src/app/app.service';
 
 @Component({
@@ -8,6 +9,7 @@ import { AppService } from 'src/app/app.service';
   styleUrls: ['./language.component.scss'],
 })
 export class LanguageComponent {
+  @Input() lang: AvailableLang;
   languagesList: Language[];
 
   constructor(private appService: AppService) {
