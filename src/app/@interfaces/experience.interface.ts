@@ -1,25 +1,28 @@
-import { Skill } from './skill.interface';
+import { isSkill, Skill } from './skill.interface';
+import { isTranslation, Translation } from './translations';
 
 export interface Experience {
-  title: string;
-  company: string;
-  date: string;
-  location: string;
-  description: string;
-  hiddenDescription: string;
+  title: Translation;
+  company: Translation;
+  date: Translation;
+  location: Translation;
+  description: Translation;
+  hiddenDescription?: Translation;
   collapsed: boolean;
   skills: Skill[];
 }
 
 export function isExperience(arg: Experience): arg is Experience {
-  return typeof arg.title === 'string' &&
-    typeof arg.company === 'string' &&
-    typeof arg.date === 'string' &&
-    typeof arg.location === 'string' &&
-    typeof arg.description === 'string' &&
-    typeof arg.hiddenDescription === 'string' &&
+  return isTranslation(arg.title) &&
+    isTranslation(arg.company) &&
+    isTranslation(arg.date) &&
+    isTranslation(arg.location) &&
+    isTranslation(arg.description) &&
+    (typeof arg.hiddenDescription === 'undefined' ||
+      (arg.hiddenDescription && isTranslation(arg.hiddenDescription))) &&
     typeof arg.collapsed === 'boolean' &&
-    typeof arg.skills === 'object'
+    typeof arg.skills === 'object' &&
+    arg.skills.every(isSkill)
     ? true
     : false;
 }

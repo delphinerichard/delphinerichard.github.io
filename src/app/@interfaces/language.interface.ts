@@ -1,4 +1,4 @@
-import { Translation } from './translations';
+import { isTranslation, Translation } from './translations';
 
 export interface Language {
   name: Translation;
@@ -7,8 +7,7 @@ export interface Language {
 }
 
 export function isLanguage(arg: Language): arg is Language {
-  return typeof arg.name.fr == 'string' &&
-    typeof arg.name.en == 'string' &&
+  return isTranslation(arg.name) &&
     typeof arg.level == 'string' &&
     typeof arg.icon == 'string'
     ? true

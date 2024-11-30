@@ -1,32 +1,44 @@
 [
   {
-    "title": "Ingénieure de spécialisation",
-    "company": "EURECOM",
-    "date": "2020 - 2022",
-    "location": "Sophia (06)",
-    "description": "Double diplôme <br/> Ingénieure spécialisée en Sécurité des Systèmes d'Information et des Communications<br/> Formation en anglais",
-    "hiddenDescription": "",
+    "title": {
+      "fr": "Ingénieure de spécialisation",
+      "en": "Specialized engineer"
+    },
+    "company": { "fr": "EURECOM", "en": "EURECOM" },
+    "date": { "fr": "2020 - 2022", "en": "2020 - 2022" },
+    "location": {
+      "fr": "Sophia-Antipolis (06)",
+      "en": "Sophia-Antipolis (France)"
+    },
+    "description": {
+      "fr": "Double diplôme <br/> Ingénieure spécialisée en Sécurité des Systèmes d'Information et des Communications<br/> Formation en anglais",
+      "en": "Double degree <br/> Specialized engineer in Information and Communication Systems Security<br/> Courses in English"
+    },
     "skills": [],
     "collapsed": true
   },
   {
-    "title": "Ingénieure informatique",
-    "company": "ENSSAT Lannion",
-    "date": "2018 - 2020",
-    "location": "Lannion (22)",
-    "description": "Ecole nationale supérieure des sciences appliquées et de technologie",
-    "hiddenDescription": "",
+    "title": { "fr": "Ingénieure informatique", "en": "Software engineer" },
+    "company": { "fr": "ENSSAT Lannion", "en": "ENSSAT Lannion" },
+    "date": { "fr": "2018 - 2020", "en": "2018 - 2020" },
+    "location": { "fr": "Lannion (22)", "en": "Lannion (France)" },
+    "description": {
+      "fr": "Ecole nationale supérieure des sciences appliquées et de technologie",
+      "en": "National School of Applied Sciences and Technology"
+    },
     "skills": [],
     "collapsed": true
   },
   {
-    "title": "CPGE",
-    "company": "Lycée Clemenceau",
-    "date": "2016 - 2018",
-    "location": "Nantes (44)",
-    "description": "Classe préparatoire aux grandes écoles <br/> MPSI - MP",
+    "title": { "fr": "CPGE", "en": "Preparatory classes" },
+    "company": { "fr": "Lycée Clemenceau", "en": "Lycée Clemenceau" },
+    "date": { "fr": "2016 - 2018", "en": "2016 - 2018" },
+    "location": { "fr": "Nantes (44)", "en": "Nantes (France)" },
+    "description": {
+      "fr": "Classe préparatoire aux grandes écoles <br/> MPSI - MP",
+      "en": "Preparatory classes for the French Grandes Ecoles <br/> MPSI - MP"
+    },
     "skills": [],
-    "hiddenDescription": "",
     "collapsed": true
   }
 ]

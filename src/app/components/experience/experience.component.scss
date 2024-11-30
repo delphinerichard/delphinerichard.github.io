@@ -6,7 +6,6 @@
   justify-content: space-between;
   gap: 1rem;
   height: 100%;
-  max-width: 90%;
 }
 
 .show-more-button {
@@ -40,8 +39,6 @@
 }
 
 .experience-infos {
-  display: inline-flex;
-  justify-content: space-between;
   width: 100%;
   color: $font-color-secondary;
 }
@@ -53,6 +50,7 @@
 }
 .experience-date {
   display: inline-flex;
+  margin-right: 1rem;
 }
 
 .experience-location {
