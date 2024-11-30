@@ -1,8 +1,12 @@
 <div class="languages">
   <div class="language-item" *ngFor="let language of languagesList">
     <span class="language-name">
-      <mat-icon [svgIcon]="language.icon" aria-hidden="true"></mat-icon> &nbsp;
-      &nbsp; {{ language.name[lang] }}</span
+      <mat-icon
+        [svgIcon]="language.icon"
+        aria-hidden="true"
+        (click)="toggleLanguage(language.icon)"
+      ></mat-icon>
+      &nbsp; &nbsp; {{ language.name[lang] }}</span
     >
     <div class="language-level">
       <div

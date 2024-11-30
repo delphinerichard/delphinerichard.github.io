@@ -37,8 +37,12 @@ export class AppComponent {
     sanitizer: DomSanitizer,
     translate: TranslateService
   ) {
-    translate.setDefaultLang('fr');
-    translate.use('fr');
+    const browserLang = translate.getBrowserLang();
+    if (browserLang === 'en') {
+      translate.setDefaultLang('en');
+      translate.use('en');
+    }
+
     translate.onLangChange.subscribe((event: LangChangeEvent) => {
       this.lang = event.lang as AvailableLang;
     });
