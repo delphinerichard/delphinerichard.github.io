@@ -23,11 +23,6 @@ p {
   position: relative;
 }
 
-.pdf-button {
-  color: white;
-  background-color: $accent;
-}
-
 a,
 a:visited,
 a:hover {
@@ -37,6 +32,9 @@ a:hover {
 
 // Mobile design
 @media (max-width: 1200px) {
+  .settings {
+    display: none;
+  }
   .small-column {
     display: none;
   }
@@ -51,5 +49,12 @@ a:hover {
 @media (min-width: 1200px) {
   .mobile-header {
     display: none;
+  }
+
+  .settings {
+    // background-color: pink;
+    display: flex;
+    justify-content: end;
+    margin-bottom: -3rem;
   }
 }

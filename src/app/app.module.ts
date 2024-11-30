@@ -18,7 +18,15 @@ import { JobsComponent } from './components/jobs/jobs.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { LanguageComponent } from './components/language/language.component';
 import { MobileHeaderComponent } from './components/mobile-header/mobile-header.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { MatMenuModule } from '@angular/material/menu';
+import { SettingsComponent } from './components/settings/settings.component';
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -31,6 +39,7 @@ import { HttpClientModule } from '@angular/common/http';
     ContactComponent,
     LanguageComponent,
     MobileHeaderComponent,
+    SettingsComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +51,16 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     MatGridListModule,
     MatTooltipModule,
+    MatMenuModule,
     HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+      defaultLanguage: 'fr',
+    }),
   ],
   providers: [AppService],
   bootstrap: [AppComponent],
