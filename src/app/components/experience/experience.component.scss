@@ -37,6 +37,8 @@
 
 .experience-company {
   margin-bottom: 0.3rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
 }
 
 .experience-infos {
@@ -52,10 +54,24 @@
 .experience-date {
   display: inline-flex;
   margin-right: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
 }
 
 .experience-location {
   display: inline-flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+.experience-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+.experience-hidden-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
 }
 
 .skill-list {

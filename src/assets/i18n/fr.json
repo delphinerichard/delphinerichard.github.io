@@ -13,7 +13,8 @@
         "name": "Français",
         "icon": "french"
       }
-    }
+    },
+    "download-pdf": "Télécharger le CV"
   },
   "jobs": {
     "title": "Expériences professionnelles"

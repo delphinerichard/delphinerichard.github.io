@@ -4,6 +4,11 @@ p {
   margin: 0;
 }
 
+.content {
+  background-color: $background-color;
+  margin: 0;
+}
+
 .spacer {
   flex: 1;
 }

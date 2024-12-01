@@ -29,8 +29,12 @@
       </div>
     </div>
 
-    <div [innerHTML]="experience.description[lang]"></div>
     <div
+      class="experience-description"
+      [innerHTML]="experience.description[lang]"
+    ></div>
+    <div
+      class="experience-hidden-description"
       *ngIf="!experience.collapsed && experience.hiddenDescription"
       [innerHTML]="experience.hiddenDescription[lang]"
     ></div>

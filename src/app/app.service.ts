@@ -66,4 +66,49 @@ export class AppService {
         }
       });
   }
+
+  public getPdfData(): Promise<Response> {
+    const clonedDocument = new Document();
+    const myCloneBody = document.documentElement.cloneNode(true);
+    clonedDocument.appendChild(myCloneBody);
+
+    // Remove settings button
+    clonedDocument.querySelector('app-settings');
+    const appSettingsElementMobileHeader =
+      clonedDocument.querySelector('app-settings');
+    if (appSettingsElementMobileHeader) {
+      appSettingsElementMobileHeader.remove();
+    }
+    const appSettingsElementSmallColumn =
+      clonedDocument.querySelector('app-settings');
+    if (appSettingsElementSmallColumn) {
+      appSettingsElementSmallColumn.remove();
+    }
+
+    // extract the HTML of the cloned document
+    let clonedDocumentString = clonedDocument.documentElement.outerHTML;
+
+    // Replace relative paths with absolute paths
+    clonedDocumentString = clonedDocumentString.replace(
+      /assets\/photo/g,
+      'https://delphinerichard.github.io/assets/photo'
+    );
+    clonedDocumentString = clonedDocumentString.replace(
+      /favicon.ico/g,
+      'https://delphinerichard.github.io/favicon.ico'
+    );
+
+    // Create a form data object and append the cloned document to it
+    const formData = new FormData();
+    formData.append(
+      'file',
+      new Blob([clonedDocumentString], { type: 'text/html' }),
+      'cv.html'
+    );
+
+    return fetch('http://localhost:3000', {
+      method: 'POST',
+      body: formData,
+    });
+  }
 }
