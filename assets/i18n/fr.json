@@ -13,12 +13,20 @@
         "name": "Français",
         "icon": "french"
       }
-    }
+    },
+    "download-pdf": "Télécharger le CV"
   },
   "jobs": {
     "title": "Expériences professionnelles"
   },
   "formations": {
     "title": "Formations"
+  },
+  "snackbar": {
+    "download-pdf-error": "Erreur lors du téléchargement du pdf, veuillez réessayer plus tard"
+  },
+  "download-pdf-dialog": {
+    "title": "Téléchargement du CV",
+    "message": "Veuillez patienter, le téléchargement est en cours..."
   }
 }
