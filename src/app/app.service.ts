@@ -73,29 +73,23 @@ export class AppService {
       documentElement.getElementsByClassName('show-more-button');
     if (!showMoreButtons || showMoreButtons.length === 0) {
       return;
-    } else {
-      for (const divElement of Array.from(showMoreButtons)) {
-        const bu = divElement.querySelector('button');
-        if (!bu) {
-          console.error('No button found in div element', divElement);
-          continue;
-        }
-        const icon = bu.querySelector('mat-icon');
-        if (icon && icon.textContent === 'keyboard_arrow_down') {
-          bu.click();
-        }
-        await new Promise((resolve) => setTimeout(resolve, 1000));
+    }
+    for (const divElement of Array.from(showMoreButtons)) {
+      const button = divElement.querySelector('button');
+      if (!button) {
+        continue;
       }
+      const icon = button.querySelector('mat-icon');
+      if (icon && icon.textContent === 'keyboard_arrow_down') {
+        button.click();
+      }
+
+      // wait for the document to be updated
+      await new Promise((resolve) => setTimeout(resolve, 1000));
     }
   }
 
-  public async getPdfData(): Promise<Response> {
-    await this.openAllCards(document.documentElement);
-
-    const clonedDocument = new Document();
-    const myCloneBody = document.documentElement.cloneNode(true);
-    clonedDocument.appendChild(myCloneBody);
-
+  private removeSettings(clonedDocument: Document) {
     // Remove settings button
     clonedDocument.querySelector('app-settings');
     const appSettingsElementMobileHeader =
@@ -116,6 +110,28 @@ export class AppService {
     if (settingsMenu && settingsMenu.length > 0) {
       settingsMenu[0].remove();
     }
+  }
+
+  private removeShowMoreButtons(clonedDocument: Document) {
+    // Remove show more buttons
+    const showMoreButtons =
+      clonedDocument.getElementsByClassName('show-more-button');
+    if (showMoreButtons && showMoreButtons.length > 0) {
+      for (const showMoreButton of Array.from(showMoreButtons)) {
+        showMoreButton.remove();
+      }
+    }
+  }
+
+  public async getPdfData(): Promise<Response> {
+    await this.openAllCards(document.documentElement);
+
+    const clonedDocument = new Document();
+    const myCloneBody = document.documentElement.cloneNode(true);
+    clonedDocument.appendChild(myCloneBody);
+
+    this.removeSettings(clonedDocument);
+    this.removeShowMoreButtons(clonedDocument);
 
     // extract the HTML of the cloned document
     let clonedDocumentString = clonedDocument.documentElement.outerHTML;
@@ -143,7 +159,6 @@ export class AppService {
       body: formData,
     })
       .then((res) => {
-        console.log(res);
         return res;
       })
       .catch((error) => {
