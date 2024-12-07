@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "dev": "ng serve --poll=2000",
+    "dev": "ng serve --poll=2000 --port=4201",
     "build": "ng build --base-href 'https://delphinerichard.github.io/'",
     "deploy": "npx angular-cli-ghpages --dir=dist/delphinerichard.github.io/",
     "watch": "ng build --watch --configuration development",

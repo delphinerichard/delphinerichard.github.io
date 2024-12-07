@@ -23,6 +23,11 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { MatMenuModule } from '@angular/material/menu';
 import { SettingsComponent } from './components/settings/settings.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { DownloadDialogComponent } from './components/download-dialog/download-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { ErrorSnackbarComponent } from './components/error-snackbar/error-snackbar.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
@@ -40,6 +45,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     LanguageComponent,
     MobileHeaderComponent,
     SettingsComponent,
+    DownloadDialogComponent,
+    ErrorSnackbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,6 +59,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatGridListModule,
     MatTooltipModule,
     MatMenuModule,
+    MatProgressBarModule,
+    MatDialogModule,
+    MatSnackBarModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {

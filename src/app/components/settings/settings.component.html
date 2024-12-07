@@ -15,6 +15,10 @@
       <mat-icon>language</mat-icon>
       {{ "settings.language.label" | translate }}
     </button>
+    <button mat-menu-item (click)="downloadPdf()" class="opaque-menu-item">
+      <mat-icon>download</mat-icon>
+      <span>{{ "settings.download-pdf" | translate }}</span>
+    </button>
   </mat-menu>
 
   <mat-menu #languages="matMenu" class="opaque-menu">
