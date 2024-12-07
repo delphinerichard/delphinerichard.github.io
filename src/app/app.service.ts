@@ -154,7 +154,7 @@ export class AppService {
       'cv.html'
     );
 
-    return fetch('http://147.79.114.245/html-to-pdf', {
+    return fetch('https://rivonglade.onthewifi.com/html-to-pdf', {
       method: 'POST',
       body: formData,
     })
