@@ -45,3 +45,14 @@ h4 {
   grid-template-columns: 1fr;
   gap: 20px;
 }
+
+.mdc-snackbar {
+  background-color: white;
+}
+
+.mat-mdc-snack-bar-actions {
+  button {
+    color: $font-color-primary;
+    text-transform: uppercase;
+  }
+}

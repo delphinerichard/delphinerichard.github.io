@@ -1,0 +1,9 @@
+<h2 mat-dialog-title>{{ "download-pdf-dialog.title" | translate }}</h2>
+<mat-dialog-content>
+  <p>{{ "download-pdf-dialog.message" | translate }}</p>
+
+  <mat-progress-bar
+    mode="indeterminate"
+    *ngIf="data.isLoading"
+  ></mat-progress-bar>
+</mat-dialog-content>

@@ -21,5 +21,12 @@
   },
   "formations": {
     "title": "Formations"
+  },
+  "snackbar": {
+    "download-pdf-error": "Erreur lors du téléchargement du pdf, veuillez réessayer plus tard"
+  },
+  "download-pdf-dialog": {
+    "title": "Téléchargement du CV",
+    "message": "Veuillez patienter, le téléchargement est en cours..."
   }
 }

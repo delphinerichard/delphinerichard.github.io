@@ -13,12 +13,20 @@
         "name": "French",
         "icon": "french"
       }
-    }
+    },
+    "download-pdf": "Download resume"
   },
   "jobs": {
     "title": "Work Experience"
   },
   "formations": {
     "title": "Education"
+  },
+  "snackbar": {
+    "download-pdf-error": "Error while downloading the pdf, please try again later"
+  },
+  "download-pdf-dialog": {
+    "title": "Download resume",
+    "message": "Please wait, download is in progress..."
   }
 }

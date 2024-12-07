@@ -1,0 +1,12 @@
+<mat-icon aria-hidden="true" fontIcon="warning"></mat-icon>
+
+<span matSnackBarLabel> {{ data.message | translate }} </span>
+<span matSnackBarActions>
+  <button
+    mat-button
+    matSnackBarAction
+    (click)="snackBarRef.dismissWithAction()"
+  >
+    {{ data.action }}
+  </button>
+</span>

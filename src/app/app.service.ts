@@ -67,7 +67,31 @@ export class AppService {
       });
   }
 
-  public getPdfData(): Promise<Response> {
+  private async openAllCards(documentElement: HTMLElement) {
+    // Open all cards
+    const showMoreButtons =
+      documentElement.getElementsByClassName('show-more-button');
+    if (!showMoreButtons || showMoreButtons.length === 0) {
+      return;
+    } else {
+      for (const divElement of Array.from(showMoreButtons)) {
+        const bu = divElement.querySelector('button');
+        if (!bu) {
+          console.error('No button found in div element', divElement);
+          continue;
+        }
+        const icon = bu.querySelector('mat-icon');
+        if (icon && icon.textContent === 'keyboard_arrow_down') {
+          bu.click();
+        }
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+      }
+    }
+  }
+
+  public async getPdfData(): Promise<Response> {
+    await this.openAllCards(document.documentElement);
+
     const clonedDocument = new Document();
     const myCloneBody = document.documentElement.cloneNode(true);
     clonedDocument.appendChild(myCloneBody);
@@ -83,6 +107,14 @@ export class AppService {
       clonedDocument.querySelector('app-settings');
     if (appSettingsElementSmallColumn) {
       appSettingsElementSmallColumn.remove();
+    }
+
+    // Remove settings menu
+    const settingsMenu = clonedDocument.getElementsByClassName(
+      'cdk-overlay-container'
+    );
+    if (settingsMenu && settingsMenu.length > 0) {
+      settingsMenu[0].remove();
     }
 
     // extract the HTML of the cloned document
@@ -106,9 +138,22 @@ export class AppService {
       'cv.html'
     );
 
-    return fetch('http://localhost:3000', {
+    return fetch('http://147.79.114.245/html-to-pdf', {
       method: 'POST',
       body: formData,
-    });
+    })
+      .then((res) => {
+        console.log(res);
+        return res;
+      })
+      .catch((error) => {
+        console.error('Error while fetching the pdf', error);
+        return Promise.reject(
+          new Response(null, {
+            status: 500,
+            statusText: 'Internal Server Error',
+          })
+        );
+      });
   }
 }
