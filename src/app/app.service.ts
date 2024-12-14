@@ -154,10 +154,13 @@ export class AppService {
       'cv.html'
     );
 
-    return fetch('https://rivonglade.onthewifi.com/api/v1/convert', {
-      method: 'POST',
-      body: formData,
-    })
+    return fetch(
+      'https://rivonglade.onthewifi.com/html-to-pdf/api/v1/convert',
+      {
+        method: 'POST',
+        body: formData,
+      }
+    )
       .then((res) => {
         return res;
       })
