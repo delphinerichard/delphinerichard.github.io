@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Experience, isExperience } from './@interfaces/experience.interface';
 import { isLanguage, Language } from './@interfaces/language.interface';
+import { TranslateService } from '@ngx-translate/core';
 
 @Injectable()
 export class AppService {
+  constructor(private readonly translateService: TranslateService) {}
   public getLanguagesData(): Promise<Language[]> {
     return fetch('assets/data/languages.json')
       .then((response) => {
@@ -143,6 +145,12 @@ export class AppService {
     });
   }
 
+  // Get current language used and set it in the head of the html
+  private setCurrentLanguage(clonedDocument: Document) {
+    const currentLanguage = this.translateService.currentLang;
+    clonedDocument.documentElement.lang = currentLanguage;
+  }
+
   public async getPdfData(): Promise<Response> {
     await this.openAllCards(document.documentElement);
 
@@ -153,6 +161,7 @@ export class AppService {
     this.removeSettings(clonedDocument);
     this.removeShowMoreButtons(clonedDocument);
     this.embedCss(clonedDocument);
+    this.setCurrentLanguage(clonedDocument);
 
     // extract the HTML of the cloned document
     let clonedDocumentString = clonedDocument.documentElement.outerHTML;
