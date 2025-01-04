@@ -40,10 +40,19 @@ export class AppComponent {
     sanitizer: DomSanitizer,
     translate: TranslateService
   ) {
+    const isHeadless = navigator.webdriver;
     const browserLang = translate.getBrowserLang();
-    if (browserLang === 'en') {
+    if (browserLang === 'en' && !isHeadless) {
       translate.setDefaultLang('en');
       translate.use('en');
+    }
+
+    if (isHeadless) {
+      const htmlTag = document.getElementsByTagName('html')[0];
+      const langAttr = htmlTag.getAttribute('lang');
+      if (langAttr && langAttr !== this.lang) {
+        translate.use(langAttr);
+      }
     }
 
     translate.onLangChange.subscribe((event: LangChangeEvent) => {
