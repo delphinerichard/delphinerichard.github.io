@@ -123,6 +123,26 @@ export class AppService {
     }
   }
 
+  private embedCss(clonedDocument: Document) {
+    if (!clonedDocument) {
+      return;
+    }
+    const styleSheets = Array.from(document.styleSheets);
+    styleSheets.forEach((sheet) => {
+      try {
+        if (sheet.cssRules) {
+          const style = document.createElement('style');
+          style.textContent = Array.from(sheet.cssRules)
+            .map((rule) => rule.cssText)
+            .join('\n');
+          clonedDocument.querySelector('head')?.appendChild(style);
+        }
+      } catch (e) {
+        console.warn(`Unable to access CSS rules for ${sheet.href}`, e);
+      }
+    });
+  }
+
   public async getPdfData(): Promise<Response> {
     await this.openAllCards(document.documentElement);
 
@@ -132,6 +152,7 @@ export class AppService {
 
     this.removeSettings(clonedDocument);
     this.removeShowMoreButtons(clonedDocument);
+    this.embedCss(clonedDocument);
 
     // extract the HTML of the cloned document
     let clonedDocumentString = clonedDocument.documentElement.outerHTML;
