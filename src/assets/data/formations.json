@@ -1,7 +1,7 @@
 [
   {
     "title": {
-      "fr": "Ingénieure de spécialisation",
+      "fr": "Ingénieure spécialisée",
       "en": "Specialized engineer"
     },
     "company": { "fr": "EURECOM", "en": "EURECOM" },
@@ -11,8 +11,8 @@
       "en": "Sophia-Antipolis (France)"
     },
     "description": {
-      "fr": "Double diplôme <br/> Ingénieure spécialisée en Sécurité des Systèmes d'Information et des Communications<br/> Formation en anglais",
-      "en": "Double degree <br/> Specialized engineer in Information and Communication Systems Security<br/> Courses in English"
+      "fr": "Double diplôme ~ Ingénieure spécialisée en Sécurité des Systèmes d'Information et des Communications<br/> Formation en anglais",
+      "en": "Double degree ~ Specialized engineer in Information and Communication Systems Security<br/> Courses in English"
     },
     "skills": [],
     "collapsed": true

@@ -11,7 +11,15 @@
 
 .header {
   text-align: center;
-  height: 85vh;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-headless {
+  text-align: center;
+  height: 96%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
