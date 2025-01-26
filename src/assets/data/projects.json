@@ -1,0 +1,69 @@
+[
+  {
+    "title": {
+      "fr": "CV en ligne",
+      "en": "Online resume"
+    },
+    "description": {
+      "fr": "Création de mon CV en ligne",
+      "en": "Creation of my online resume"
+    },
+    "imgLink": "assets/img/cv.png",
+    "skills": [
+      {
+        "name": {
+          "fr": "Angular 18",
+          "en": "Angular 18"
+        },
+        "weight": 100,
+        "icon": "angular"
+      }
+    ],
+    "links": [
+      {
+        "name": {
+          "fr": "GitHub",
+          "en": "GitHub"
+        },
+        "url": "https://github.com/delphinerichard/delphinerichard.github.io"
+      },
+      {
+        "name": {
+          "fr": "CV",
+          "en": "Resume"
+        },
+        "url": "https://delphinerichard.github.io"
+      }
+    ]
+  },
+  {
+    "title": {
+      "fr": "HTML to PDF",
+      "en": "HTML to PDF"
+    },
+    "description": {
+      "fr": "Bibliothèque backend permettant de convertir une page HTML en PDF",
+      "en": "Backend library to convert an HTML page to PDF"
+    },
+    "imgLink": "assets/img/code.jpg",
+    "skills": [
+      {
+        "name": {
+          "fr": "NestJS",
+          "en": "NestJS"
+        },
+        "weight": 100,
+        "icon": "nest"
+      }
+    ],
+    "links": [
+      {
+        "name": {
+          "fr": "GitHub",
+          "en": "GitHub"
+        },
+        "url": "https://github.com/delphinerichard/html-to-pdf"
+      }
+    ]
+  }
+]

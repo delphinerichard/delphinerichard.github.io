@@ -1,0 +1,74 @@
+@import "src/styles.scss";
+
+.project-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.project-title {
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: 0.3rem;
+  margin-top: 0.3rem;
+  color: $accent;
+  max-width: 90%;
+}
+
+.project-icon {
+  color: $accent;
+  margin-right: 0.2rem;
+  transform: scale(0.8);
+}
+
+.project-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.spacer {
+  flex: 1;
+  width: 200px;
+}
+
+.project-image {
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.project-link-button {
+  color: $accent;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  mat-icon {
+    color: $accent;
+    margin-right: 0.4rem;
+  }
+}
+
+.project-link-button:hover {
+  transform: translateY(-2px);
+  text-decoration: underline;
+}

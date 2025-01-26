@@ -1,0 +1,36 @@
+<div class="project-container">
+  <div class="project-infos">
+    <div>
+      <h4 class="project-title">{{ project.title[lang] }}</h4>
+
+      <div
+        class="project-description"
+        [innerHTML]="project.description[lang]"
+      ></div>
+    </div>
+    <div class="skill-list">
+      <app-skill
+        *ngFor="let skill of project.skills"
+        [skill]="skill"
+        [lang]="lang"
+      ></app-skill>
+    </div>
+    <div class="project-links">
+      <a
+        [href]="link.url"
+        target="_blank"
+        rel="noopener"
+        class="project-link-button"
+        *ngFor="let link of project.links"
+      >
+        <mat-icon class="project-link-icon" svgIcon="external_link"></mat-icon>
+        {{ link.name[lang] }}
+      </a>
+    </div>
+  </div>
+  <img
+    class="project-image"
+    [src]="project.imgLink"
+    [alt]="project.title[lang]"
+  />
+</div>
