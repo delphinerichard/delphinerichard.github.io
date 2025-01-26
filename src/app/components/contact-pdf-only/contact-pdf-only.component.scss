@@ -1,0 +1,33 @@
+@import "src/styles.scss";
+
+a {
+  color: $font-color-primary;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 30px;
+
+  p {
+    color: $accent;
+    margin-left: 5px;
+    font-size: 11px;
+  }
+}
+
+mat-icon {
+  margin-right: 5px;
+  height: 20px;
+  width: 20px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+h3 {
+  text-align: left;
+}

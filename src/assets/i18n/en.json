@@ -28,5 +28,11 @@
   "download-pdf-dialog": {
     "title": "Download resume",
     "message": "Please wait, download is in progress..."
+  },
+  "contacts": "Contacts",
+  "languages": "Languages",
+  "website-description": {
+    "part-one": "This resume is available online at the following address:",
+    "part-two": "It was made by myself in Angular 18."
   }
 }

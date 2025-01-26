@@ -1,4 +1,6 @@
 <div class="languages">
+  <h3 *ngIf="isHeadless">{{ "languages" | translate }}</h3>
+
   <div class="language-item" *ngFor="let language of languagesList">
     <span class="language-name">
       <mat-icon

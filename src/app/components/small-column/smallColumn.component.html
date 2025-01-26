@@ -1,20 +1,22 @@
 <div class="box header">
-  <img src="assets/photo/delphine.jpeg" alt="photo" class="avatar" />
-  <h2 class="name">{{ "name" | translate }}</h2>
-  <h2 class="job-title">{{ "job-title" | translate }}</h2>
-  <div class="location">
-    <mat-icon class="location-icon" aria-hidden="true">location_on</mat-icon>
-    {{ "location" | translate }}
+  <div>
+    <img src="assets/photo/delphine.jpeg" alt="photo" class="avatar" />
+    <h2 class="name">{{ "name" | translate }}</h2>
+    <h2 class="job-title">{{ "job-title" | translate }}</h2>
+    <div class="location">
+      <mat-icon class="location-icon" aria-hidden="true">location_on</mat-icon>
+      {{ "location" | translate }}
+    </div>
+
+    <app-contact *ngIf="!isHeadless"></app-contact>
+    <app-contact-pdf-only *ngIf="isHeadless"></app-contact-pdf-only>
+    <app-language [lang]="lang" [isHeadless]="isHeadless"></app-language>
   </div>
-
-  <app-contact></app-contact>
-  <app-language [lang]="lang"></app-language>
-
-  <div *ngIf="isHeadless" class="website-description">
-    <p>Ce CV est disponible en ligne à l'adresse suivante.</p>
+  <div class="website-description" *ngIf="isHeadless">
+    <p>{{ "website-description.part-one" | translate }}</p>
     <a href="https://delphinerichard.github.io" target="_blank"
       >https://delphinerichard.github.io</a
     >
-    <p>Il a été réalisé par mes soins en Angular 18.</p>
+    <p>{{ "website-description.part-two" | translate }}</p>
   </div>
 </div>

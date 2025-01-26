@@ -11,6 +11,7 @@ import { AppService } from 'src/app/app.service';
 })
 export class LanguageComponent {
   @Input() lang: AvailableLang;
+  @Input() isHeadless: boolean;
   languagesList: Language[];
 
   constructor(

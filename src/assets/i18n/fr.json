@@ -28,5 +28,11 @@
   "download-pdf-dialog": {
     "title": "Téléchargement du CV",
     "message": "Veuillez patienter, le téléchargement est en cours..."
+  },
+  "contacts": "Contacts",
+  "languages": "Langues",
+  "website-description": {
+    "part-one": "Ce CV est disponible en ligne à l'adresse suivante :",
+    "part-two": "Il a été réalisé par mes soins en Angular 18."
   }
 }
