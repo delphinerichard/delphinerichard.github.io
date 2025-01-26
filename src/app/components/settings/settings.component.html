@@ -3,6 +3,8 @@
     mat-icon-button
     [matMenuTriggerFor]="settings"
     class="settings-button"
+    [ngClass]="{ 'active-button': settingsTrigger.menuOpen }"
+    #settingsTrigger="matMenuTrigger"
   >
     <mat-icon>settings</mat-icon>
   </button>
@@ -46,6 +48,8 @@
     mat-icon-button
     [matMenuTriggerFor]="languages"
     class="settings-button"
+    [ngClass]="{ 'active-button': languagesTrigger.menuOpen }"
+    #languagesTrigger="matMenuTrigger"
   >
     <mat-icon>translate</mat-icon>
   </button>
