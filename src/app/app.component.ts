@@ -34,20 +34,21 @@ const DOCKER = `<svg xmlns="http://www.w3.org/2000/svg" width="2269" height="250
 export class AppComponent {
   title = 'delphinerichard.github.io';
   lang: AvailableLang = 'fr';
+  isHeadless: boolean;
 
   constructor(
     iconRegistry: MatIconRegistry,
     sanitizer: DomSanitizer,
     translate: TranslateService
   ) {
-    const isHeadless = navigator.webdriver;
+    this.isHeadless = navigator.webdriver;
     const browserLang = translate.getBrowserLang();
-    if (browserLang === 'en' && !isHeadless) {
+    if (browserLang === 'en' && !this.isHeadless) {
       translate.setDefaultLang('en');
       translate.use('en');
     }
 
-    if (isHeadless) {
+    if (this.isHeadless) {
       const htmlTag = document.getElementsByTagName('html')[0];
       const langAttr = htmlTag.getAttribute('lang');
       if (langAttr && langAttr !== this.lang) {

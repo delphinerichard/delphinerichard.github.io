@@ -8,4 +8,5 @@ import { AvailableLang } from 'src/app/@interfaces/translations';
 })
 export class SmallColumnComponent {
   @Input() lang: AvailableLang;
+  @Input() isHeadless: boolean;
 }

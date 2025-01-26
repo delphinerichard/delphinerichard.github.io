@@ -1,4 +1,4 @@
-<div class="settings-menu">
+<div class="settings-menu mobile">
   <button
     mat-icon-button
     [matMenuTriggerFor]="settings"
@@ -39,4 +39,36 @@
       <span> {{ "settings.language.en.name" | translate }}</span>
     </button>
   </mat-menu>
+</div>
+
+<div class="settings-menu desktop">
+  <button
+    mat-icon-button
+    [matMenuTriggerFor]="languages"
+    class="settings-button"
+  >
+    <mat-icon>language</mat-icon>
+  </button>
+  <mat-menu #languages="matMenu" class="opaque-menu">
+    <button
+      mat-menu-item
+      (click)="toggleLanguage('fr')"
+      class="opaque-menu-item"
+    >
+      <mat-icon svgIcon="french" aria-hidden="true" />
+      <span>{{ "settings.language.fr.name" | translate }}</span>
+    </button>
+    <button
+      mat-menu-item
+      (click)="toggleLanguage('en')"
+      class="opaque-menu-item"
+    >
+      <mat-icon svgIcon="uk" aria-hidden="true" />
+      <span> {{ "settings.language.en.name" | translate }}</span>
+    </button>
+  </mat-menu>
+
+  <button (click)="downloadPdf()" class="settings-button">
+    <mat-icon>download</mat-icon>
+  </button>
 </div>

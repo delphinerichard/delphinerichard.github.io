@@ -1,13 +1,21 @@
 @import "src/styles.scss";
 
+.settings-menu {
+  display: flex;
+  flex-direction: row;
+}
+
 .settings-button {
   color: $font-color-primary;
   text-decoration: none;
   display: flex;
   align-items: center;
+  border: none;
+  transition: color 0.2s;
 
   &:hover {
     color: $accent;
+    cursor: pointer;
   }
 }
 
@@ -20,8 +28,17 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
+  .desktop {
+    display: none;
+  }
   .settings-button {
     border: solid 1px $accent;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .mobile {
+    display: none;
   }
 }
