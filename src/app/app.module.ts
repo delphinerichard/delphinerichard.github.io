@@ -28,6 +28,7 @@ import { DownloadDialogComponent } from './components/download-dialog/download-d
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ErrorSnackbarComponent } from './components/error-snackbar/error-snackbar.component';
+import { ContactPdfOnlyComponent } from './components/contact-pdf-only/contact-pdf-only.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
@@ -47,6 +48,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     SettingsComponent,
     DownloadDialogComponent,
     ErrorSnackbarComponent,
+    ContactPdfOnlyComponent,
   ],
   imports: [
     BrowserModule,

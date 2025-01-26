@@ -12,6 +12,9 @@
 .header {
   text-align: center;
   height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .name {
@@ -39,6 +42,12 @@
 }
 
 .website-description {
+  margin-bottom: 6rem;
   font-size: 12px;
+  line-height: 12px;
   font-style: italic;
+
+  a {
+    color: $accent;
+  }
 }
