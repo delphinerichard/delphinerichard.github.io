@@ -19,12 +19,16 @@
   }
 }
 
+.active-button {
+  color: $accent;
+  cursor: pointer;
+}
+
 .opaque-menu-item {
-  margin-top: -1rem;
   background-color: white;
 
   &:hover {
-    background-color: $background-color;
+    background-color: rgb($background-color, 0.2);
   }
 }
 
