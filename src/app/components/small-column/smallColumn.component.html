@@ -9,4 +9,12 @@
 
   <app-contact></app-contact>
   <app-language [lang]="lang"></app-language>
+
+  <div *ngIf="isHeadless" class="website-description">
+    <p>Ce CV est disponible en ligne à l'adresse suivante.</p>
+    <a href="https://delphinerichard.github.io" target="_blank"
+      >https://delphinerichard.github.io</a
+    >
+    <p>Il a été réalisé par mes soins en Angular 18.</p>
+  </div>
 </div>
