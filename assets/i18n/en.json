@@ -22,6 +22,9 @@
   "formations": {
     "title": "Education"
   },
+  "projects": {
+    "title": "Projects"
+  },
   "snackbar": {
     "download-pdf-error": "Error while downloading the pdf, please try again later"
   },
