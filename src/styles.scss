@@ -9,6 +9,8 @@ body {
   font-family: $content-font;
   font-size: 14px;
   background-color: $background-color;
+  display: flex;
+  justify-content: center;
 }
 
 h1,
