@@ -1,0 +1,70 @@
+[
+  {
+    "title": {
+      "fr": "Interrail en Espagne",
+      "en": "Interrail in Spain"
+    },
+    "date": {
+      "fr": "Mai 2024",
+      "en": "May 2024"
+    },
+    "description": {
+      "fr": "Voyage en train de 3 semaines pour visiter Girone, Valence, Carthagène, Séville, Cordoue et Huelva.",
+      "en": "3-week train trip to visit Girona, Valencia, Cartagena, Seville, Cordoba and Huelva."
+    },
+    "imgLink": "assets/img/spain_interrail.jpeg",
+    "skills": [],
+    "links": []
+  },
+  {
+    "title": {
+      "fr": "Interrail en Norvège",
+      "en": "Interrail in Scandinavia"
+    },
+    "date": {
+      "fr": "Mai 2023",
+      "en": "May 2023"
+    },
+    "description": {
+      "fr": "Un mois de voyage en train à la découverte de la Norvège, de la Suède et du Danemark. <br/>📍 18 villes 🏙<br/>📍 8516 km 🛤<br/>📍 113 h 18 min de train ⏳<br/>📍 11 livres lus 📚",
+      "en": "A month of train travel to discover Norway, Sweden and Denmark. <br/>📍 18 cities 🏙<br/>📍 8516 km 🛤<br/>📍 113 h 18 min of train ⏳<br/>📍 11 read books 📚 "
+    },
+    "imgLink": "assets/img/scandinavia_interrail.jpeg",
+    "skills": [],
+    "links": []
+  },
+  {
+    "title": {
+      "fr": "Interrail en Slovenie",
+      "en": "Interrail in Slovenia"
+    },
+    "date": {
+      "fr": "Septembre 2022",
+      "en": "September 2022"
+    },
+    "description": {
+      "fr": "Premier interrail et première expérience des trains de nuits pour découvrir la Slovénie.",
+      "en": "First interrail trip and first night train experience to travel around Slovenia."
+    },
+    "imgLink": "assets/img/slovenia_interrail.jpeg",
+    "skills": [],
+    "links": []
+  },
+  {
+    "title": {
+      "fr": "Voile en compétition",
+      "en": "Sailing competition"
+    },
+    "date": {
+      "fr": "2010 - 2022",
+      "en": "20010 - 2022"
+    },
+    "description": {
+      "fr": "Régates en dériveur puis en habitable pendant 12 ans.",
+      "en": "Regattas in dinghy then in habitable for 12 years."
+    },
+    "imgLink": "assets/img/sailboat.jpg",
+    "skills": [],
+    "links": []
+  }
+]

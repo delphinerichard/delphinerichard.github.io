@@ -91,6 +91,27 @@ export class AppService {
       });
   }
 
+  public getStuffData(): Promise<Project[]> {
+    return fetch('assets/data/stuff.json')
+      .then((response) => {
+        if (response.status === 200) {
+          return response.json();
+        } else {
+          console.error('Projects data not found', response);
+          return [];
+        }
+      })
+      .then((projects: Project[]) => {
+        // Check data format
+        if (projects.every((el) => isProject(el))) {
+          return projects;
+        } else {
+          console.error('Wrong data format');
+          return [];
+        }
+      });
+  }
+
   private async openAllCards(documentElement: HTMLElement) {
     // Open all cards
     const showMoreButtons =
