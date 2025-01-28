@@ -19,7 +19,7 @@
   {
     "title": {
       "fr": "Interrail en Norvège",
-      "en": "Interrail in Scandinavia"
+      "en": "Interrail in Norway"
     },
     "date": {
       "fr": "Mai 2023",
@@ -27,7 +27,7 @@
     },
     "description": {
       "fr": "Un mois de voyage en train à la découverte de la Norvège, de la Suède et du Danemark. <br/>📍 18 villes 🏙<br/>📍 8516 km 🛤<br/>📍 113 h 18 min de train ⏳<br/>📍 11 livres lus 📚",
-      "en": "A month of train travel to discover Norway, Sweden and Denmark. <br/>📍 18 cities 🏙<br/>📍 8516 km 🛤<br/>📍 113 h 18 min of train ⏳<br/>📍 11 read books 📚 "
+      "en": "A month of train travel to discover Norway, Sweden and Denmark. <br/>📍 18 cities 🏙<br/>📍 8516 km 🛤<br/>📍 113 h 18 min of train ⏳<br/>📍 11 books read 📚 "
     },
     "imgLink": "assets/img/scandinavia_interrail.jpeg",
     "skills": [],
@@ -57,11 +57,11 @@
     },
     "date": {
       "fr": "2010 - 2022",
-      "en": "20010 - 2022"
+      "en": "2010 - 2022"
     },
     "description": {
-      "fr": "Régates en dériveur puis en habitable pendant 12 ans.",
-      "en": "Regattas in dinghy then in habitable for 12 years."
+      "fr": "Régates en Optimist, Laser puis J80 pendant 12 ans.",
+      "en": "Optimist, Laser and then J80 regattas for 12 years."
     },
     "imgLink": "assets/img/sailboat.jpg",
     "skills": [],
