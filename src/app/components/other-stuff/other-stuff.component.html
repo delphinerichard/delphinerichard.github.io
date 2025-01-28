@@ -1,0 +1,12 @@
+<div class="other-stuff-container">
+  <h2 class="section-title">
+    <mat-icon svgIcon="other_stuff"></mat-icon> &nbsp;
+    {{ "other-stuff.title" | translate }}
+  </h2>
+
+  <div class="grid-container">
+    <div class="box" *ngFor="let stuff of stuffList">
+      <app-project [project]="stuff" [lang]="lang"></app-project>
+    </div>
+  </div>
+</div>

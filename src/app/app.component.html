@@ -13,5 +13,6 @@
     <app-jobs [lang]="lang"></app-jobs>
     <app-formations [lang]="lang"></app-formations>
     <app-projects [lang]="lang"></app-projects>
+    <app-other-stuff *ngIf="!isHeadless" [lang]="lang"></app-other-stuff>
   </div>
 </div>

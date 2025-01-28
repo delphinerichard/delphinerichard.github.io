@@ -23,7 +23,10 @@
     "title": "Formations"
   },
   "projects": {
-    "title": "Projets"
+    "title": "Mes projets"
+  },
+  "other-stuff": {
+    "title": "Entre deux commits"
   },
   "snackbar": {
     "download-pdf-error": "Erreur lors du téléchargement du pdf, veuillez réessayer plus tard"

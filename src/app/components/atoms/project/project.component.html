@@ -2,20 +2,26 @@
   <div class="project-infos">
     <div>
       <h4 class="project-title">{{ project.title[lang] }}</h4>
-
+      <div class="project-date" *ngIf="project.date">
+        <mat-icon class="project-icon">date_range</mat-icon>
+        {{ project.date[lang] }}
+      </div>
       <div
         class="project-description"
         [innerHTML]="project.description[lang]"
       ></div>
     </div>
-    <div class="skill-list">
+    <div class="skill-list" *ngIf="project.skills && project.skills.length > 0">
       <app-skill
         *ngFor="let skill of project.skills"
         [skill]="skill"
         [lang]="lang"
       ></app-skill>
     </div>
-    <div class="project-links">
+    <div
+      class="project-links"
+      *ngIf="project.links && project.links.length > 0"
+    >
       <a
         [href]="link.url"
         target="_blank"

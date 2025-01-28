@@ -5,6 +5,7 @@ import { isTranslation, Translation } from './translations';
 export interface Project {
   title: Translation;
   description: Translation;
+  date?: Translation;
   imgLink: string;
   skills: Skill[];
   links?: Link[];
@@ -13,6 +14,7 @@ export interface Project {
 export function isProject(arg: Project): arg is Project {
   return (isTranslation(arg.title) &&
     isTranslation(arg.description) &&
+    (typeof arg.date === 'undefined' || isTranslation(arg.date)) &&
     typeof arg.imgLink === 'string' &&
     typeof arg.skills === 'object' &&
     arg.skills.every(isSkill) &&
