@@ -4,6 +4,9 @@
     <h2 class="section-title">{{ "jobs.title" | translate }}</h2>
   </div>
 
+  <div class="box current-job-box" *ngIf="currentJob">
+    <app-experience [experience]="currentJob" [lang]="lang"></app-experience>
+  </div>
   <div class="grid-container">
     <div class="box" *ngFor="let jobs of jobsList">
       <app-experience [experience]="jobs" [lang]="lang"></app-experience>
