@@ -10,10 +10,12 @@ import { AppService } from 'src/app/app.service';
 })
 export class JobsComponent {
   @Input() lang: AvailableLang;
+  currentJob: Experience | undefined;
   jobsList: Experience[];
 
   constructor(private appService: AppService) {
     this.appService.getJobsData().then((res: Experience[]) => {
+      this.currentJob = res.shift();
       this.jobsList = res;
     });
   }
