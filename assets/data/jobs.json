@@ -1,11 +1,51 @@
 [
   {
     "title": {
+      "fr": "Développeuse full-stack",
+      "en": "Full-stack developer"
+    },
+    "company": { "fr": "Fédération française de voile", "en": "French Sailing Federation" },
+    "date": { "fr": "depuis Mars 2025", "en": "since March 2025" },
+    "location": { "fr": "Paris 15e (75)", "en": "Paris (France)" },
+    "description": {
+      "fr": "Développement d'une API en NestJS pour accéder aux données de la FFVoile",
+      "en": "Development of an API in NestJS to access FFVoile data"
+    },
+    "skills": [
+      {
+        "name": {
+          "fr": "Typescript",
+          "en": "Typescript"
+        },
+        "weight": 90,
+        "icon": "typescript"
+      },
+      {
+        "name": {
+          "fr": "NestJS",
+          "en": "NestJS"
+        },
+        "weight": 70,
+        "icon": "nest"
+      },
+      {
+        "name": {
+          "fr": "Jest",
+          "en": "Jest"
+        },
+        "weight": 40,
+        "icon": "jest"
+      }
+    ],
+    "collapsed": true
+  },
+  {
+    "title": {
       "fr": "Ingénieure développement full-stack",
       "en": "Full-stack development engineer"
     },
     "company": { "fr": "digital4better", "en": "digital4better" },
-    "date": { "fr": "depuis Juin 2023", "en": "since June 2023" },
+    "date": { "fr": "Juin 2023 - Février 2025", "en": "June 2023 - February 2025" },
     "location": { "fr": "Rennes (35)", "en": "Rennes (France)" },
     "description": {
       "fr": "Développement et maintenance d'applications web pour différents clients\n <ul><li> Développement de formulaires de création de devis et d'adhésion pour une mutuelle et d'une plateforme backoffice dédiée aux gestionnaires de la mutuelle </li> <li>Maintenance corrective et évolutive sur différents projets au sein du centre de services </li> <li>Amélioration du site interne de l'entreprise</li><li>Implémentation d'une application permettant de créer une matrice de double matérialité dans le cadre de la CSRD</li> <li>Implémentation de tests unitaires et end-to-end</li><li> Entretiens avec les clients afin de recueillir les exigences fonctionnelles</li> <li>Formation au Numérique Responsable (certification Institut du Numérique Responsable)</li </ul>",
