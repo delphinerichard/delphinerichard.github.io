@@ -4,12 +4,15 @@
       "fr": "Développeuse full-stack",
       "en": "Full-stack developer"
     },
-    "company": { "fr": "Fédération française de voile", "en": "French Sailing Federation" },
+    "company": {
+      "fr": "Fédération française de voile",
+      "en": "French Sailing Federation"
+    },
     "date": { "fr": "depuis Mars 2025", "en": "since March 2025" },
     "location": { "fr": "Paris 15e (75)", "en": "Paris (France)" },
     "description": {
-      "fr": "Développement d'une API en NestJS pour accéder aux données de la FFVoile",
-      "en": "Development of an API in NestJS to access FFVoile data"
+      "fr": "Développement et maintenance sur différents projets internes de la FFVoile\n <ul><li> Développement d'une API en NestJS pour accéder aux données de la FFVoile</li> <li>Développement d'une nouvelle interface dédiée à la compétition</li> <li>Dématérialisation des carnets utilisés par les moniteurs pour le suivi des stagiaires</li> </ul>",
+      "en": "Development and maintenance on various internal projects of the FFVoile\n <ul><li> Development of an API in NestJS to access FFVoile data</li> <li>Development of a new interface dedicated to competition</li> <li>Digitization of the notebooks used by instructors for trainees</li> </ul>"
     },
     "skills": [
       {
@@ -30,6 +33,14 @@
       },
       {
         "name": {
+          "fr": "React",
+          "en": "React"
+        },
+        "weight": 50,
+        "icon": "react"
+      },
+      {
+        "name": {
           "fr": "Jest",
           "en": "Jest"
         },
@@ -45,7 +56,10 @@
       "en": "Full-stack development engineer"
     },
     "company": { "fr": "digital4better", "en": "digital4better" },
-    "date": { "fr": "Juin 2023 - Février 2025", "en": "June 2023 - February 2025" },
+    "date": {
+      "fr": "Juin 2023 - Février 2025",
+      "en": "June 2023 - February 2025"
+    },
     "location": { "fr": "Rennes (35)", "en": "Rennes (France)" },
     "description": {
       "fr": "Développement et maintenance d'applications web pour différents clients\n <ul><li> Développement de formulaires de création de devis et d'adhésion pour une mutuelle et d'une plateforme backoffice dédiée aux gestionnaires de la mutuelle </li> <li>Maintenance corrective et évolutive sur différents projets au sein du centre de services </li> <li>Amélioration du site interne de l'entreprise</li><li>Implémentation d'une application permettant de créer une matrice de double matérialité dans le cadre de la CSRD</li> <li>Implémentation de tests unitaires et end-to-end</li><li> Entretiens avec les clients afin de recueillir les exigences fonctionnelles</li> <li>Formation au Numérique Responsable (certification Institut du Numérique Responsable)</li </ul>",

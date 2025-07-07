@@ -38,6 +38,36 @@
   },
   {
     "title": {
+      "fr": "Site web de mariage",
+      "en": "Wedding website"
+    },
+    "description": {
+      "fr": "Création d'un site web pour mon mariage avec une partie publique pour que les invités puissent consulter les informations et une partie privée, accessible uniquement avec un mot de passe, pour gérer la logistique du mariage.",
+      "en": "Creation of a website for my wedding with a public part for guests to view information and a private part, accessible only with password, to manage the wedding logistics."
+    },
+    "imgLink": "assets/img/wedding.png",
+    "skills": [
+      {
+        "name": {
+          "fr": "Svelte",
+          "en": "Svelte"
+        },
+        "weight": 100,
+        "icon": "svelte"
+      }
+    ],
+    "links": [
+      {
+        "name": {
+          "fr": "Site du mariage",
+          "en": "Wedding website"
+        },
+        "url": "https://mariage.delphine-jeremie.ovh/"
+      }
+    ]
+  },
+  {
+    "title": {
       "fr": "HTML to PDF",
       "en": "HTML to PDF"
     },
